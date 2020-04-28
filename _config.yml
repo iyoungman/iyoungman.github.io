@@ -34,15 +34,16 @@ github:
   username: iyoungman
 swiftype:
   searchId: iXZyPokVfxFaBTvi64Y6
-gitment:
-    repo: iyoungman.github.io
-    client_id: 1a9bec107d9f699174b0
-    client_secret: 67eb652c447144e8f776fab8fbfd96b49d9dd0e2
+# gitment:
+#     repo: iyoungman.github.io
+#     client_id: 1a9bec107d9f699174b0
+#     client_secret: 67eb652c447144e8f776fab8fbfd96b49d9dd0e2
+
+# Disqus
+disqus:
+  enable: true
+  shortname: iyoungman
 
 url: "https://iyoungman.github.io"
 imgrepo: "https://iyoungman.github.io/static/img"
-
-
-#url: "http://127.0.0.1:4000"
-#imgrepo: "http://127.0.0.1:4000/static/img"
 
