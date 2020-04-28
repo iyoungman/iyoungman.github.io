@@ -16,4 +16,6 @@
     {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ '/static/css/' | append: style | prepend: site.baseurl | prepend: site.url}}" />
     {%endfor%}
 
+    {% include analytics.html %}
+    
 </head>
