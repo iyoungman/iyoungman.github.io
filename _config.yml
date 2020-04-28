@@ -14,7 +14,6 @@ paginate_path: "page/:num"
 baseurl: ""
 
 
-
 defaults:
   -
     scope:
@@ -34,10 +33,6 @@ github:
   username: iyoungman
 swiftype:
   searchId: iXZyPokVfxFaBTvi64Y6
-# gitment:
-#     repo: iyoungman.github.io
-#     client_id: 1a9bec107d9f699174b0
-#     client_secret: 67eb652c447144e8f776fab8fbfd96b49d9dd0e2
 
 # Disqus
 disqus:
@@ -46,4 +41,3 @@ disqus:
 
 url: "https://iyoungman.github.io"
 imgrepo: "https://iyoungman.github.io/static/img"
-
