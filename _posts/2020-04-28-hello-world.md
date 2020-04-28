@@ -2,7 +2,7 @@
 layout: post
 title: hello world
 tags: first hello
-categories: java
+categories: Java
 ---
 
 ```java
