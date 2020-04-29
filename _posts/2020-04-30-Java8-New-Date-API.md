@@ -45,7 +45,8 @@ calendar.set(2020, 4 , 22);//2020년 5월 22일
 <br>  
 
 * 다음은 Calendar 클래스에 정의된 상수값이다.  
-```java
+```java  
+  
 /**
 * Value of the {@link #MONTH} field indicating the
 * first month of the year in the Gregorian and Julian calendars.
@@ -67,8 +68,9 @@ public static final int MARCH = 2;
   
 <br>  
 
-2. 상수 필드 남용
-```java
+2. 상수 필드 남용  
+
+```java  
 //현재 시간에서 두 시간을 더한다.(HOUR_OF_DAY)
 Calendar calendar = Calendar.getInstance();
 calendar.add(Calendar.HOUR_OF_DAY, 2);
@@ -77,7 +79,7 @@ calendar.add(Calendar.HOUR_OF_DAY, 2);
 Calendar calendar2 = Calendar.getInstance();
 calendar.add(Calendar.DECEMBER, 2);
 ```
-
+  
 > Calendar의 add(int field, int amount) 메소드는 일정 시간 만큼 +, - 해주는 역할이다.
 >
 > 하지만 첫번째 파라미터에 Calendar.DECEMBER과 같이 엉뚱한 상수가 들어가도 
@@ -121,8 +123,9 @@ int second = time.getSecond(); // 20
 
 <br>  
 
-## LocalDateTime
-* LocalDate + LocalTime
+## LocalDateTime  
+* LocalDate + LocalTime  
+
 ```java
 LocalDateTime dt = LocalDateTime.of(2014, Month.MARCH, 18, 13, 45, 20);
   
@@ -163,6 +166,6 @@ LocalDate date4 = date3.plus(3, ChronoUnit.MONTHS); // 2014-08-18
 
 ## 참고
 * [모던 자바 인 액션](http://www.yes24.com/Product/Goods/77125987?Acode=101)
-* https://d2.naver.com/helloworld/645609
-* https://www.geeksforgeeks.org/date-class-java-examples/
-* https://www.geeksforgeeks.org/calendar-class-in-java-with-examples/
+* [https://d2.naver.com/helloworld/645609](https://d2.naver.com/helloworld/645609)
+* [https://www.geeksforgeeks.org/date-class-java-examples/](https://www.geeksforgeeks.org/date-class-java-examples/)
+* [https://www.geeksforgeeks.org/calendar-class-in-java-with-examples/](https://www.geeksforgeeks.org/calendar-class-in-java-with-examples/)
