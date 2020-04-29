@@ -45,6 +45,7 @@ calendar.set(2020, 4 , 22);//2020년 5월 22일
 <br>  
 
 * 다음은 Calendar 클래스에 정의된 상수값이다.  
+  
 ```java  
   
 /**
@@ -145,7 +146,7 @@ LocalTime time = dt.toLocalTime();
 //절대적인 방식 
 LocalDate date1 = LocalDate.of(2017, 5, 11); // 2017-05-11
 LocalDate date2 = date1.withYear(2010);      // 2010-05-11
-LocalDate date3 = date2.with(ChronoField.MONTH_OF_YEAR, 1); // 2010-01-11 ** 
+LocalDate date3 = date2.with(ChronoField.MONTH_OF_YEAR, 1); // 2010-01-11 
 LocalDate date4 = date3.withDayOfMonth(1);   // 2010-01-01
 
 //상대적 방식
