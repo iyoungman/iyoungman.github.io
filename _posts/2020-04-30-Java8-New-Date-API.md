@@ -47,7 +47,6 @@ calendar.set(2020, 4 , 22);//2020년 5월 22일
 * 다음은 Calendar 클래스에 정의된 상수값이다.  
   
 ```java  
-  
 /**
 * Value of the {@link #MONTH} field indicating the
 * first month of the year in the Gregorian and Julian calendars.
