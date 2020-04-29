@@ -4,3 +4,4 @@ _site
 .local
 .local/*
 .jekyll-cache
+_posts/temp/*
