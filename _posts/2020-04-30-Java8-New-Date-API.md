@@ -40,11 +40,11 @@ calendar.set(2020, 4 , 22);//2020년 5월 22일
 1. Month의 인덱스
 > Calendar의 Month는 상수필드로써 0부터 시작한다.
 >
-> 즉, 0 -> 1월, 1 -> 2월과 같은 형태이다.
+> 즉, 0 -> 1월, 1 -> 2월과 같은 형태이다.  
   
 <br>  
 
-* 다음은 Calendar 클래스에 정의된 상수값이다.
+* 다음은 Calendar 클래스에 정의된 상수값이다.  
 ```java
 /**
 * Value of the {@link #MONTH} field indicating the
@@ -63,19 +63,11 @@ public static final int FEBRUARY = 1;
 * third month of the year in the Gregorian and Julian calendars.
 */
 public static final int MARCH = 2;
-```
+```  
   
 <br>  
 
 2. 상수 필드 남용
-> 아래 예제를 보자.
->
-> Calendar의 add(int field, int amount) 메소드는 일정 시간 만큼 +, - 해주는 역할이다.
->
-> 하지만 첫번째 파라미터에 Calendar.DECEMBER과 같이 엉뚱한 상수가 들어가도 
->
-> 컴파일 시점에 확인 할 수 없을뿐더러, 결과가 같을 수도 있다.
-
 ```java
 //현재 시간에서 두 시간을 더한다.(HOUR_OF_DAY)
 Calendar calendar = Calendar.getInstance();
@@ -85,6 +77,12 @@ calendar.add(Calendar.HOUR_OF_DAY, 2);
 Calendar calendar2 = Calendar.getInstance();
 calendar.add(Calendar.DECEMBER, 2);
 ```
+
+> Calendar의 add(int field, int amount) 메소드는 일정 시간 만큼 +, - 해주는 역할이다.
+>
+> 하지만 첫번째 파라미터에 Calendar.DECEMBER과 같이 엉뚱한 상수가 들어가도 
+>
+> 컴파일 시점에 확인 할 수 없을뿐더러, 결과가 같을 수도 있다.
   
 <br>  
 
