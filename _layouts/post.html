@@ -1,6 +1,4 @@
---- 
-layout: default 
----
+--- layout: default ---
 <div class="row">
     <div class="content col-lg-9">
         <div class="sheet post">
@@ -30,14 +28,14 @@ layout: default
                 <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
                 <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
             </div>
+
+            <h2 id="comments">Comments</h2>
+            {% include disqus_comments.html %}
         </div>
         <div class="pad-min"></div>
         <!-- <div id="post-comment" class="sheet post hidden">
             <div id="disqus_thread"></div>
         </div> -->
-        {% if page.comments != false %} 
-            {% include disqus_comments.html %} 
-        {% endif %}
     </div>
     <div class="content-navigation col-lg-3">
         <div class="shadow-bottom-center">
