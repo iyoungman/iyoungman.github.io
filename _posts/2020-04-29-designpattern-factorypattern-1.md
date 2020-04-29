@@ -15,8 +15,9 @@ categories: DesignPattern
 ## SimpleFactory
   
 ### Entity
-* 치킨을 만든다고 생각해보자
+* 치킨을 만든다고 생각해보자.  
 * 치킨의 종류는 여러가지가 있으므로 아래와 같이 구성할 수 있다. 
+  
 ```java
 public interface Chicken {
     void bake();
