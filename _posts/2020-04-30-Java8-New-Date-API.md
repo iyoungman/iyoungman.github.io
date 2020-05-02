@@ -22,12 +22,12 @@ Date date = new Date();//Wed Apr 22 18:18:50 KST 2020
 
 LocalDate date = LocalDate.now();//2020-04-22
 ```
-1. Java8의 LocalDate와 비교했을 때, 결과가 직관적이지 않다.
+1) Java8의 LocalDate와 비교했을 때, 결과가 직관적이지 않다.
 > Wed Apr 22 18:18:50 KST 2020
   
 <br>  
 
-2. Date는 가변클래스이다.
+2) Date는 가변클래스이다.
 > 반면에 Java8의 LocalDate는 불변클래스이다.
 
 <br> 
@@ -37,7 +37,7 @@ LocalDate date = LocalDate.now();//2020-04-22
 Calendar calendar = Calendar.getInstance();
 calendar.set(2020, 4 , 22);//2020년 5월 22일
 ```
-1. Month의 인덱스
+1) Month의 인덱스
 > Calendar의 Month는 상수필드로써 0부터 시작한다.
 >
 > 즉, 0 -> 1월, 1 -> 2월과 같은 형태이다.  
@@ -68,7 +68,7 @@ public static final int MARCH = 2;
   
 <br>  
 
-2. 상수 필드 남용  
+2) 상수 필드 남용  
 
 ```java  
 //현재 시간에서 두 시간을 더한다.(HOUR_OF_DAY)
@@ -88,7 +88,7 @@ calendar.add(Calendar.DECEMBER, 2);
   
 <br>  
 
-3. Calendar 역시 가변클래스이다.
+3) Calendar 역시 가변클래스이다.
   
 <br>  
 
