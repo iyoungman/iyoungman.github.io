@@ -56,8 +56,9 @@ public class DateMessageProviderTest {
 }
 ```
 
-* DateMessageProvider에 있는 Calendar의 시간을 변경할 수 있는 방법이 없다.
-> DateMessageProvider와 Calendar가 `강결합` 되어있기 때문이다.
+* Test를 제대로 할 수 없다.
+* DateMessageProvider에 있는 Calendar의 시간을 변경할 수 있는 방법이 없기 때문이다.
+> DateMessageProvider와 Calendar를 `강결합` 관계라고 말한다.
   
 <br>  
 
