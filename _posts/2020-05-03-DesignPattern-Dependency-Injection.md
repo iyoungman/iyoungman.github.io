@@ -16,7 +16,7 @@ categories: DesignPattern
 * 이때 객체 내부에서 다른 객체의 인스턴스를 생성하지 않고
 * 외부에서 생성된 다른 객체의 인스턴스를 주입 받는것을
 * 의존성 주입이라고 한다.
-> DI는 인스턴스를 `생성하는 책임과 사용하는 책임을 분리`하자는 의미와 같다.
+> DI는 `인스턴스를 생성하는 책임과 사용하는 책임을 분리`하자는 의미와 같다.
 >
 > 이를 통해 유연한 설계를 할 수 있다.
 >
@@ -98,5 +98,5 @@ public class DateMessageProviderTest {
 }
 ```
 
-* DateMessageProvide가 의존하고 있는 Calendar 인스턴스 생성을 DateMessageProvider가 결정하지 않고 외부에서 전달받는다.
+* DateMessageProvider가 의존하고 있는 Calendar 인스턴스 생성을 DateMessageProvider가 결정하지 않고 외부에서 전달받는다.
 * 이 처럼 좀 더 유연한 구조로 개발하는 것이 DI의 핵심이다.
