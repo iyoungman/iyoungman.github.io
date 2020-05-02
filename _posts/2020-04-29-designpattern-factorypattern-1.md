@@ -7,6 +7,7 @@ categories: DesignPattern
 
 ## Factory 패턴
 * 객체의 `생성과 사용을 분리`하는 디자인 패턴
+* 
 * 왜 생성과 사용을 분리해야할까?
 * 아래 예제를 통해 설명한다.
 
@@ -104,6 +105,7 @@ public class Client {
 * 이는 생성의 책임을 분리하면 해결할 수 있다.
 * Client는 가져와서 사용하는 책임만 가지면 되기 때문이다.
 * 따라서 Factory 패턴을 이용하면 변경에 따른 비용을 최소화할 수 있다.
+* 이외에도 인스턴스화 로직을 Factory 클래스 내부로 숨길 수 있다는 장점을 가질 수 있다.
 
 <br>  
   
@@ -177,3 +179,7 @@ public class SimpleChickenFactory {
 * 다음 포스팅에서는 구체화된 Factory 패턴의 2가지 종류를 알아본다.
 > Factory 메서드 패턴  
 > 추상 Factory 패턴
+
+<br>  
+
+## 참고
