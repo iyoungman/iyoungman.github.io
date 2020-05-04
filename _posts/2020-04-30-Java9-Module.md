@@ -208,7 +208,8 @@ module module2 {
 
 <br>  
 
-* Module2의 pom.xml
+* Module2의 pom.xml  
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -242,8 +243,8 @@ module module2 {
 
 
 </project>
-```
-
+```  
+  
 <br>  
 
 * Module2의 module-info.java
