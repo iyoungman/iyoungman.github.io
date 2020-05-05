@@ -1,9 +1,12 @@
 ---
 layout: post
-title: Java9. 모듈 시스템 알아보기 (1)
+title: Java9. 모듈 시스템 알아보기
 tags: Java9 Module
 categories: Java
 ---
+
+* TOC {:toc}  
+
 ## 개요
 * 모듈을 사용하는 주요 동기를 이해한다.
 * 모듈을 어떻게 사용할지 살펴본다.
@@ -200,6 +203,8 @@ module module2 {
 
 <br>  
 
+***
+
 6) 외부 종속성 주입
 * 만약 외부 라이브러리를 주입받고 싶다면
 * Maven/Gradle 등과 함께 사용하면 된다.
@@ -287,6 +292,11 @@ module module2 {
   
 <br>  
 
+## 코드  
+* [https://github.com/iyoungman/java-practice](https://github.com/iyoungman/java-practice)  
+
+  
+<br>  
 
 ## 참고
 * [모던 자바 인 액션](http://www.yes24.com/Product/Goods/77125987?Acode=101)
