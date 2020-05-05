@@ -5,7 +5,8 @@ tags: Java9 Module
 categories: Java
 ---  
   
-* TOC {:toc}  
+* TOC
+{:toc}  
   
 ## 개요
 * 모듈을 사용하는 주요 동기를 이해한다.
