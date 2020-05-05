@@ -4,7 +4,10 @@ title: Factory 패턴 (1)
 tags: DesignPattern FactoryPattern 생성사용분리
 categories: DesignPattern
 ---
-
+  
+* TOC
+{:toc}  
+  
 ## Factory 패턴
 * 객체의 `생성과 사용을 분리`하는 디자인 패턴
 * 

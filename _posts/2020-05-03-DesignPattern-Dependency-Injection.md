@@ -4,6 +4,10 @@ title: 의존성 주입
 tags: DesignPattern DI
 categories: DesignPattern
 ---
+  
+* TOC
+{:toc}  
+  
 ## 개요
 * 의존성 주입은 무엇인가?
 * 간단한 예제를 통해 필요성을 알아본다.
