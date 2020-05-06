@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 의존성 주입
+title: 의존성 주입(Dependency Injection)
 tags: DesignPattern DI
 categories: DesignPattern
 ---
