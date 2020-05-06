@@ -20,7 +20,7 @@ categories: Java
 * 객체에 대한 해시값(hashCode())를 커스텀하고 싶을 때
 * 재정의한다.
 
-### equlas()
+### equals()
 * Object 클래스의 equals() 메서드이다.
 ```java  
 public boolean equals(Object obj) {
@@ -68,7 +68,7 @@ public boolean equals(Object obj) {
   
 <br>  
 
-* 다음 예제를 보자.
+* 다음 예제를 보자.  
 ```java
 public class Main {
 
@@ -184,4 +184,4 @@ class Three {
 <br>  
 
 ## Reference
-* [한빛미디어-이것이 자바다 그림 참고](https://slidesplayer.org/slide/14091546/)
+* [한빛미디어-이것이 자바다 그림 참조](https://slidesplayer.org/slide/14091546/)
