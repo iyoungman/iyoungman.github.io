@@ -153,7 +153,7 @@ class Three {
   
 <br>  
 
-* HashMap, HashSet, HashTable과 같이 해시 함수를 이용하는 자료구조에서는 아래와 같은 과정을 거친다.
+* HashMap, HashSet, HashTable 같이 해시 함수를 이용하는 자료구조에서는 아래와 같은 과정을 거친다.
 ![image](https://user-images.githubusercontent.com/25604495/81193180-06fa1180-8ff6-11ea-826f-ad905a1b0c86.png)  
   
 <br>  
