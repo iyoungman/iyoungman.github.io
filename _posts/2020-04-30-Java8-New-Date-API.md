@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Java8. 새로운 날짜와 시간 API
-tags: Java Java8 Date Calendar LocalDate LocalTime
+tags: Java Java8 Date Calendar LocalDate LocalTime ModernJavaInAction
 categories: Java
 ---
   
 * TOC
 {:toc}  
   
-## 개요
+## Summary
 * Java8이전의 날짜 API의 문제점을 알아본다.
 * Java8의 새로운 날짜와 시간 라이브러리를 알아본다.
   
@@ -168,7 +168,7 @@ LocalDate date4 = date3.plus(3, ChronoUnit.MONTHS); // 2014-08-18
 
 <br>  
 
-## 참고
+## Reference
 * [모던 자바 인 액션](http://www.yes24.com/Product/Goods/77125987?Acode=101)
 * [https://d2.naver.com/helloworld/645609](https://d2.naver.com/helloworld/645609)
 * [https://www.geeksforgeeks.org/date-class-java-examples/](https://www.geeksforgeeks.org/date-class-java-examples/)

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Java9. 모듈 시스템 알아보기
-tags: Java9 Module
+tags: Java9 Module ModernJavaInAction
 categories: Java
 ---  
   
 * TOC
 {:toc}  
   
-## 개요
+## Summary
 * 모듈을 사용하는 주요 동기를 이해한다.
 * 모듈을 어떻게 사용할지 살펴본다.
   
@@ -293,13 +293,13 @@ module module2 {
   
 <br>  
 
-## 코드  
+## Code  
 * [https://github.com/iyoungman/java-practice](https://github.com/iyoungman/java-practice)  
 
   
 <br>  
 
-## 참고
+## Reference
 * [모던 자바 인 액션](http://www.yes24.com/Product/Goods/77125987?Acode=101)
 * [https://www.baeldung.com/java-9-modularity](https://www.baeldung.com/java-9-modularity)
 * [https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-9-jigsaw](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-9-jigsaw)

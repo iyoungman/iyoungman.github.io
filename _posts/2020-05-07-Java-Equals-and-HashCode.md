@@ -63,7 +63,7 @@ public boolean equals(Object obj) {
 <br>  
 
 ## equals를 재정의하려거든 hashCode도 재정의하라
-* equlas()를 재정의해서 두 객체가 같을경우 논리적으로 동등하다는 의미이다.
+* equals()를 재정의해서 두 객체가 같을경우 논리적으로 동등하다는 의미이다.
 * 따라서 hashCode()도 재정의해서 동일한 해시코드가 반환되도록 해야한다.
   
 <br>  
@@ -160,9 +160,10 @@ class Three {
 
 * 이중 HashMap의 코드를 살펴보면 아래와 같다.
 
-![123](https://user-images.githubusercontent.com/25604495/81195390-b2a46100-8ff8-11ea-8fe4-ebce006a6de5.PNG)
+<img src = "https://user-images.githubusercontent.com/25604495/81195390-b2a46100-8ff8-11ea-8fe4-ebce006a6de5.PNG" width="500" height="50" />  
+  
+<img src = "https://user-images.githubusercontent.com/25604495/81195386-b1733400-8ff8-11ea-90b2-973ace700163.PNG" width="500" height="200" />  
 
-![123123](https://user-images.githubusercontent.com/25604495/81195386-b1733400-8ff8-11ea-90b2-973ace700163.PNG)
 
 > key를 통해 value를 가져오는 get() 메서드이다.
 >
