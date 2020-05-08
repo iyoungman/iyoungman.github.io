@@ -119,40 +119,47 @@ public class Person {
 
 ### 디폴트 액션과 Optional 언랩
 > get()  
+
 * 확실히 존재하는 상황에만 사용한다.
 * 그렇지 않으면 Null처리 코드와 크게 다르지 않다.
 
 <br>  
 
 > orElse(T other)  
+
 * orElse는 값이 없는경우 인자인 other를 반환한다.
 
 <br>  
 
 > orElseGet(Supplier<? extends T> other)  
+
 * orElse의 게으른 버전이다.
 * 값이 없는경우에서야 Supplier 를 수행하여 값을 반환한다.
 
 <br>  
 
 > orElseThrow(Supplier<? extends T> exceptionSupplier)  
+
 * orElseThrow는 값이 없는 경우 예외를 발생한다.
 
 <br>  
 
 > ifPresent(Consumer<? super T> consumer)  
+
 * ifPresent는 값이 존재할때만, 인자의 Consumer를 수행한다.
 
 <br>  
 
 > ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)  
+
 * 자바 9에서 추가된 메서드이다.
 * ifPresent와의 차이점은 값이 없는 경우 Runnable을 실행한다.
   
 <br>  
 
-### orElse()와 orElseGet() 차이
+### orElse()와 orElseGet() 차이  
 * 코드로 확인하자.  
+
 ```java
 public static void main(String[] args) {
     String value = "VALUE";
@@ -170,7 +177,7 @@ private static String getEmptyStrWhenNull() {
     return "EMPTY";
 }
 ```  
-
+  
 > result1과 result2 모두 결과가 "VALUE"로 같다.
 >
 > 하지만 `orElse의 경우 Optional의 값이(value) Null이든 아니든 getEmptyStrWhenNull() 메서드를 항상 호출한다.`
