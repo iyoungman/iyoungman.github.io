@@ -26,29 +26,29 @@ categories: Algorithm
 ```java  
 // Complete the insertNodeAtPosition function below.
    
-    static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, int data, int position) {
+static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, int data, int position) {
 
-        int count = 0;
-        SinglyLinkedListNode prevNode = null;
-        SinglyLinkedListNode curNode = head;
-        
-        while(curNode != null) {
-            if(count == position) {
-                SinglyLinkedListNode singlyLinkedListNode = new SinglyLinkedListNode(data);
-                
-                if(prevNode != null) {
-                    prevNode.next = singlyLinkedListNode;
-                }
-                singlyLinkedListNode.next = curNode;
+    int count = 0;
+    SinglyLinkedListNode prevNode = null;
+    SinglyLinkedListNode curNode = head;
 
-                break;
-            } else {
-                prevNode = curNode;
-                curNode = curNode.next;
-                count++;
+    while(curNode != null) {
+        if(count == position) {
+            SinglyLinkedListNode singlyLinkedListNode = new SinglyLinkedListNode(data);
+
+            if(prevNode != null) {
+                prevNode.next = singlyLinkedListNode;
             }
-        }
+            singlyLinkedListNode.next = curNode;
 
-        return head;
+            break;
+        } else {
+            prevNode = curNode;
+            curNode = curNode.next;
+            count++;
+        }
     }
+
+    return head;
+}
 ```  
