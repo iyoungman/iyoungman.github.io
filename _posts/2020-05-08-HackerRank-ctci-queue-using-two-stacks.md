@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HackerRank. Queues: A Tale of Two Stacks
+title: HackerRank. Queues - A Tale of Two Stacks
 tags: Algorithm HackerRank Queue Stack
 categories: Algorithm
 ---
