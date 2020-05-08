@@ -21,7 +21,7 @@ categories: Java
 >
 > NullPointerException은 RuntimeException이기 때문에 대비하지 않을경우 문제가 크다.
 >
-> 하지만 NullPointerException을 처리하는 코드는 복잡하다.
+> 하지만 NullPointerException을 처리하는 코드는 복잡하다.  
 ```java
 public String getCarInsuranceName(Person person) {
     if (person != null) {
@@ -76,7 +76,8 @@ Optional<Car> optCar = Optional.ofNullable(car);
 <br>  
 
 ### 맵으로 Optional의 값 추출, 변환
-* 다음 예제를 보자.
+* 다음 예제를 보자.  
+
 ```java
 // Before
 String name = null;
@@ -103,7 +104,7 @@ Optional<String> optInsurance = otpInsurance.map(Insurance::getName);
 * Optional의 설계 용도는 `선택형 반환값을 지원하는 용도`뿐이다.
 * 따라서 Serializable 인터페이스 구현하지 않는다.
 * 따라서 도메인 모델에 Optional의 기능과 직렬화를 모두 사용하고 싶다면
-* Optional 값을 반환받을 수 있는 메서드를 추가하자.
+* Optional 값을 반환받을 수 있는 메서드를 추가하자.  
 ```java
 public class Person {
     private Car car;//Optional<Car> X
@@ -117,41 +118,41 @@ public class Person {
 <br>  
 
 ### 디폴트 액션과 Optional 언랩
-> get()
+> get()  
 * 확실히 존재하는 상황에만 사용한다.
 * 그렇지 않으면 Null처리 코드와 크게 다르지 않다.
 
 <br>  
 
-> orElse(T other)
+> orElse(T other)  
 * orElse는 값이 없는경우 인자인 other를 반환한다.
 
 <br>  
 
-> orElseGet(Supplier<? extends T> other)
+> orElseGet(Supplier<? extends T> other)  
 * orElse의 게으른 버전이다.
 * 값이 없는경우에서야 Supplier 를 수행하여 값을 반환한다.
 
 <br>  
 
-> orElseThrow(Supplier<? extends T> exceptionSupplier)
+> orElseThrow(Supplier<? extends T> exceptionSupplier)  
 * orElseThrow는 값이 없는 경우 예외를 발생한다.
 
 <br>  
 
-> ifPresent(Consumer<? super T> consumer)
+> ifPresent(Consumer<? super T> consumer)  
 * ifPresent는 값이 존재할때만, 인자의 Consumer를 수행한다.
 
 <br>  
 
-> ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)
+> ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)  
 * 자바 9에서 추가된 메서드이다.
 * ifPresent와의 차이점은 값이 없는 경우 Runnable을 실행한다.
   
 <br>  
 
 ### orElse()와 orElseGet() 차이
-* 코드로 확인하자.
+* 코드로 확인하자.  
 ```java
 public static void main(String[] args) {
     String value = "VALUE";
@@ -168,7 +169,8 @@ private static String getEmptyStrWhenNull() {
     
     return "EMPTY";
 }
-```
+```  
+
 > result1과 result2 모두 결과가 "VALUE"로 같다.
 >
 > 하지만 `orElse의 경우 Optional의 값이(value) Null이든 아니든 getEmptyStrWhenNull() 메서드를 항상 호출한다.`
