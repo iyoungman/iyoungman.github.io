@@ -160,9 +160,9 @@ class Three {
 
 * 이중 HashMap의 코드를 살펴보면 아래와 같다.
 
-<img src = "https://user-images.githubusercontent.com/25604495/81195390-b2a46100-8ff8-11ea-8fe4-ebce006a6de5.PNG" width="500" height="50" />  
+<img src = "https://user-images.githubusercontent.com/25604495/81195390-b2a46100-8ff8-11ea-8fe4-ebce006a6de5.PNG" width="600" height="70" />  
   
-<img src = "https://user-images.githubusercontent.com/25604495/81195386-b1733400-8ff8-11ea-90b2-973ace700163.PNG" width="500" height="200" />  
+<img src = "https://user-images.githubusercontent.com/25604495/81195386-b1733400-8ff8-11ea-90b2-973ace700163.PNG" width="600" height="270" />  
 
 
 > key를 통해 value를 가져오는 get() 메서드이다.
