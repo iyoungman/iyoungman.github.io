@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Null 대신 Optional 클래스
+title: Java8. Null 대신 Optional 클래스
 tags: Java Null Optional ModernJavaInAction
 categories: Java
 ---
@@ -22,6 +22,7 @@ categories: Java
 > NullPointerException은 RuntimeException이기 때문에 대비하지 않을경우 문제가 크다.
 >
 > 하지만 NullPointerException을 처리하는 코드는 복잡하다.  
+  
 ```java
 public String getCarInsuranceName(Person person) {
     if (person != null) {
