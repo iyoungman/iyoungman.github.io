@@ -355,7 +355,7 @@ public class Main {
   
 <br>  
 
-* 병렬 스트림 vs CompletableFuture 비교 
+### 병렬 스트림 vs CompletableFuture 비교 
 
 1) 스레드 풀  
 > 병렬 스트림을 이용하면
