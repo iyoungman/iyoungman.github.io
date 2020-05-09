@@ -98,7 +98,7 @@ public class Main {
 
 <br>  
 
-## 예제로 CompletableFuture 
+## 예제로 CompletableFuture 알아보기  
 * CompletableFuture를 통한 비동기 API 구현에 대해 살펴볼 것이다.
 * 예제는 다음과 같다.
 > 상점에서 특정 상품의 가격을 검색하는 애플리케이션을 만들것이다.
