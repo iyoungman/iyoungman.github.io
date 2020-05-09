@@ -26,7 +26,7 @@ categories: Java
 * 그러면 Future를 호출한 스레드는 별도의 작업을 처리할 수 있다.
 * 즉, 동시성을 가질 수 있다.
 
-<img src = "https://user-images.githubusercontent.com/25604495/81470678-fb416180-9226-11ea-9f30-391f9a076435.png" width="600" height="230" />
+<img src = "https://user-images.githubusercontent.com/25604495/81470678-fb416180-9226-11ea-9f30-391f9a076435.png" width="600" height="300" />
   
 <br>  
 
