@@ -26,7 +26,7 @@ categories: Java
 * 그러면 Future를 호출한 스레드는 별도의 작업을 처리할 수 있다.
 * 즉, 동시성을 가질 수 있다.
 
-<img src = "https://user-images.githubusercontent.com/25604495/81470678-fb416180-9226-11ea-9f30-391f9a076435.png" width="600" height="150" />
+<img src = "https://user-images.githubusercontent.com/25604495/81470678-fb416180-9226-11ea-9f30-391f9a076435.png" width="600" height="230" />
   
 <br>  
 
@@ -103,7 +103,7 @@ public class Main {
 * 예제는 다음과 같다.
 > 상점에서 특정 상품의 가격을 검색하는 애플리케이션을 만들것이다.
 >
-> 가격 정보를 얻는 과정에서 외부 서비스에 접근해야한다고 가정한다.(제조사 관련 프로모션 할인 등).
+> 가격 정보를 얻는 과정에서 외부 서비스에 접근해야한다고 가정한다.
 
 <br>  
 
@@ -304,7 +304,7 @@ private static void doSomething() {
 ### Step3.1 병렬 스트림 vs CompletableFuture
 * 만약 List 형태로 여러 Shop을 처리한다고 생각해보자
 * 이때 `병렬 스트림을 사용하는 방식과 CompletableFuture로 비동기 처리하는 것의 차이점이 있을까?
-> CompletableFuture는 작업에 이용할 수 있는 Executor를 지정할 수 있다.
+> 결론부터 말하면 CompletableFuture는 작업에 이용할 수 있는 Executor를 지정할 수 있다.
 >
 > Step3.2에서 확인하자.
   
@@ -350,13 +350,14 @@ public class Main {
   
 <br>  
 
-* 적절한 스레드 풀 크기 조절 참고
-> https://12bme.tistory.com/368
+* 적절한 스레드 풀 크기 조절 참고  
+> [https://12bme.tistory.com/368](https://12bme.tistory.com/368)
   
 <br>  
 
-* 병렬 스트림 vs CompletableFuture 비교
-1) 스레드 풀
+* 병렬 스트림 vs CompletableFuture 비교 
+
+1) 스레드 풀  
 > 병렬 스트림을 이용하면
 >
 > 스레드 풀의 Default 개수인 Runtime.getRuntime().availableProcessors()
