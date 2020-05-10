@@ -4,10 +4,7 @@ title: Java8. Null 대신 Optional 클래스
 tags: Java Null Optional ModernJavaInAction
 categories: Java
 ---
-  
-* TOC
-{:toc}  
-  
+
 ## Summary
 * Null의 문제점을 파악한다.
 * Java8에서 나온 Optional을 Null을 대체할 방법을 알아본다.
@@ -200,3 +197,8 @@ private static String getEmptyStrWhenNull() {
 
 ## Reference
 * [모던 자바 인 액션](http://www.yes24.com/Product/Goods/77125987?Acode=101)
+
+<br>  
+
+* TOC
+{:toc}  

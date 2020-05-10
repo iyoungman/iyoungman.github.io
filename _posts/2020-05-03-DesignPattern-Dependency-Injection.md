@@ -4,10 +4,7 @@ title: 의존성 주입(Dependency Injection)
 tags: DesignPattern DI
 categories: DesignPattern
 ---
-  
-* TOC
-{:toc}  
-  
+
 ## 개요
 * 의존성 주입은 무엇인가?
 * 간단한 예제를 통해 필요성을 알아본다.
@@ -105,3 +102,8 @@ public class DateMessageProviderTest {
 
 * DateMessageProvider가 의존하고 있는 Calendar 인스턴스 생성을 DateMessageProvider가 결정하지 않고 외부에서 전달받는다.
 * 이 처럼 좀 더 유연한 구조로 개발하는 것이 DI의 핵심이다.
+
+<br>  
+
+* TOC
+{:toc}  

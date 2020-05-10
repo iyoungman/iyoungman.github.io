@@ -4,10 +4,7 @@ title: HackerRank. Insert a node at a specific position in a linked list
 tags: Algorithm HackerRank LinkedList Java
 categories: Algorithm
 ---
-  
-* TOC
-{:toc}  
-  
+ 
 ## Problem
 [https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)    
   
@@ -52,3 +49,8 @@ static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, int 
     return head;
 }
 ```  
+
+<br>  
+
+* TOC
+{:toc}  

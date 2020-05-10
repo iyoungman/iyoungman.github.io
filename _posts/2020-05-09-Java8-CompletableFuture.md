@@ -5,8 +5,6 @@ tags: Java Java8 CompletableFuture 비동기 ModernJavaInAction
 categories: Java
 ---
   
-
-  
 ## Summary
 * Java8, Java9 에서는 코드를 비동기로 실행하는 방법을 제공한다.
 * CompletableFuture와 리액티브 프로그래밍이 있다.

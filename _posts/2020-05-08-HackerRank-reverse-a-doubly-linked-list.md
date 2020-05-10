@@ -4,10 +4,7 @@ title: HackerRank. Reverse a doubly linked list
 tags: Algorithm HackerRank LinkedList Java
 categories: Algorithm
 ---
-  
-* TOC
-{:toc}  
-  
+ 
 ## Problem
 [https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem](https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem)    
   
@@ -40,3 +37,8 @@ static DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
     return curNode;
 } 
 ```  
+
+<br>  
+
+* TOC
+{:toc}  
