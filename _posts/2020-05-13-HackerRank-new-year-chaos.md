@@ -4,12 +4,18 @@ title: HackerRank. New year chaos
 tags: Algorithm HackerRank Array Sort Java
 categories: Algorithm
 ---
-## 문제
+## Problem
 [https://www.hackerrank.com/challenges/new-year-chaos/problem](https://www.hackerrank.com/challenges/new-year-chaos/problem)  
   
 <br>  
 
-## 해결
+## Think
+1) 처음에 푼 코드가 TimeOut이 발생하여 고민하다 다른 Solution을 참고했다.  
+2) 나중에 다시 한번 풀어보자.  
+  
+<br> 
+
+## Solved Code
 ```java
 // Complete the minimumBribes function below.
 static void minimumBribes(int[] q) {
@@ -54,15 +60,9 @@ private static void swap(int i, int j, int[] q) {
 }
 ```  
   
-<br>  
+<br>   
 
-## 사고
-1) 처음에 푼 코드가 TimeOut이 발생하여 고민하다 다른 Solution을 참고했다.  
-2) 나중에 다시 한번 풀어보자.  
-  
-<br>  
-
-## 풀이 과정
+## Solved Process
 1) 뒷번호가 앞에 있는지 검증하는 과정에서 2번 초과로 뇌물을 줬으면 `Too chaotic`을 출력하고 종료한다.
 > 핵심은 뒷번호만 앞번호에게 뇌물을 줄 수 있다는 것이다.
 >
