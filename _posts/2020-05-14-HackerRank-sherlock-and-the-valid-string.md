@@ -13,11 +13,11 @@ categories: Algorithm
 * 다양한 상황을 고려해야하는 문제이다.  
 * 문제를 읽고 조건에 맞게 Valid한 3가지 상황을 고려하여 풀었다.  
   
-> `2.1 모든 Character의 Count가 같은 경우`
+> `1) 모든 Character의 Count가 같은 경우`
 >
 > ex) aabbcc -> a : 2, b : 2, c : 2
 
-> `2.2 한 Character만 Count가 다른데 해당 Count가 1일 경우`
+> `2) 한 Character만 Count가 다른데 해당 Count가 1일 경우`
 >
 > ex) abbbccc -> a : 1, b : 3, c : 3 // a만 지우면 된다.
 >
@@ -25,7 +25,7 @@ categories: Algorithm
 >
 > ex) aabbbccc -> a : 2, b : 3, c : 3
 
-> `2.3 한 Character만 Count가 다른데 해당 Count가 가장 클 경우`
+> `3) 한 Character만 Count가 다른데 해당 Count가 가장 클 경우`
 >
 > ex) aabbccc -> a : 2, b : 2, c : 3 // c를 하나 지우면 된다.
 >
@@ -103,6 +103,6 @@ private static boolean isAllSame(List<Integer> values) {
 
 ## Solved Process
 1) 계산의 편의성을 위해 정렬을 했다.  
-2) [Think](##Think)의 2.1 과정이다.  
-3) [Think](##Think)의 2.2 과정이다.  
-4) [Think](##Think)의 2.3 과정이다. 
+2) [Think](##Think)의 1 과정이다.  
+3) [Think](##Think)의 2 과정이다.  
+4) [Think](##Think)의 3 과정이다. 
