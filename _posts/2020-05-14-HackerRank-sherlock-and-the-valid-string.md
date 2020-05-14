@@ -12,6 +12,7 @@ categories: Algorithm
 ## Think
 * 다양한 상황을 고려해야하는 문제이다.  
 * 문제를 읽고 조건에 맞게 Valid한 3가지 상황을 고려하여 풀었다.  
+  
 > `2.1 모든 Character의 Count가 같은 경우`
 >
 > ex) aabbcc -> a : 2, b : 2, c : 2
