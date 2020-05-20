@@ -115,7 +115,7 @@ body,pre{
 }
 
 code{  
-    font-family:  "Consolas", "Menlo", "Monaco", sans-serif;
+    font-family: "Monaco", "Consolas", "Menlo", "Monaco", sans-serif;
 }
 
 body,.sheet,pre,code{

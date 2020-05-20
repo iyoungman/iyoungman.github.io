@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hackerrank. Making Anagrams
-tags: Algorithm Hackerrank String Java
+title: HackerRank. Making Anagrams
+tags: Algorithm HackerRank String Java
 categories: Algorithm
 ---
 ## Problem
