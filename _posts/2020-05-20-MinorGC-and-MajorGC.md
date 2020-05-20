@@ -186,12 +186,16 @@ categories: Java GC
 >
 > Concurrent Sweep 단계에서는 Mark된 쓰레기 객체를 정리한다.
 
+<br>
+
 * 장점은 stop-the-world 시간이 짧다.
 > 즉, 전체 스레드를 멈추고 수행되는 것이 아니라
 >
 > 다른 스레드가 실행 중인 상태에서 동시에 수행되는 연산이 많기 때문이다.
 >
 > Inital Mark 단계를 제외하고 위와 같이 수행된다.
+
+<br>
 
 * 단점은 다른 GC 방식보다 메모리와 CPU를 더 많이 사용한다.
 * 또한, Compaction 단계가 기본적으로 제공되지 않는다.
