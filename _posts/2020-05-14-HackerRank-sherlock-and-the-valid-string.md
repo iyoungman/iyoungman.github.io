@@ -4,6 +4,12 @@ title: HackerRank. Sherlock and the Valid String
 tags: Algorithm HackerRank String Java
 categories: Algorithm
 ---
+
+* TOC
+{:toc}  
+
+<br>
+
 ## Problem
 [https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem)  
   
@@ -35,6 +41,8 @@ categories: Algorithm
 <br>   
 
 * 위 순서대로 검증을 하면 될것 같다.
+
+* 직접 해결한 문제.
 
 <br>  
 

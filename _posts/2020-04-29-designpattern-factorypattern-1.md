@@ -5,6 +5,11 @@ tags: DesignPattern FactoryPattern 생성사용분리
 categories: DesignPattern
 ---
 
+* TOC
+{:toc}  
+
+<br>
+
 ## Factory 패턴
 * 객체의 `생성과 사용을 분리`하는 디자인 패턴
 * 왜 생성과 사용을 분리해야할까?
@@ -178,9 +183,3 @@ public class SimpleChickenFactory {
 * 다음 포스팅에서는 구체화된 Factory 패턴의 2가지 종류를 알아본다.
 > Factory 메서드 패턴  
 > 추상 Factory 패턴
-
-<br>  
-
-* TOC
-{:toc}  
-

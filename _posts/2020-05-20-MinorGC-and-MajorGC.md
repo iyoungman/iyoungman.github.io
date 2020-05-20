@@ -138,13 +138,15 @@ categories: Java GC
 ### 1. Serial GC
 * Young 영역에서는 위의 GC 과정에서 설펴본 방식을 사용한다.
 * Old 영역의 GC는 `Mark-Sweep-Compaction` 알고리즘을 사용한다.  
+
 > 1) Old 영역에 살아 있는 객체를 표시한다.(Mark)
 >
 > 2) Old 영역의 Mark된 객체를 제외하고 제거한다.(Sweep)
 >
 > 3) 살아있는 객체를 모은다.(Compaction)  
   
-![image](https://user-images.githubusercontent.com/25604495/82413363-268e4100-9ab0-11ea-9de4-95336641b73e.png)  
+<img src = "https://user-images.githubusercontent.com/25604495/82413363-268e4100-9ab0-11ea-9de4-95336641b73e.png" width="500" height="300" />  
+ 
 
 ***
 
@@ -164,6 +166,7 @@ categories: Java GC
 ### 3. Parallel Old GC
 * Parallel GC와 비교해 Old 영역의 GC 알고리즘만 다르다.
 * Old 영역에서 `Mark-Summary-Compaction` 알고리즘을 사용한다.  
+
 > Mark-Sweep-Compaction 연산과는 Sweep과 Summary의 차이다.
 >  
 > Sweep은 단일 스레드가 Old 영역을 훑어 객체만 찾아내는 방식이지만
@@ -177,7 +180,8 @@ categories: Java GC
 <br>
 
 ### 4. CMS GC
-* Old영역은 GC는 다음 흐름과 같다.
+* Old영역은 GC는 다음 흐름과 같다.  
+
 > 초기 Initial Mark 단계에서 클래스 로더에서 가장 가까운 객체 중 살아있는 객체를 찾는다.
 >
 > Concurrent Mark 단계에서 방금 살아있다고 확인된 객체에서 참조하고 있는 객체들을 따라가며 확인한다.
@@ -188,7 +192,8 @@ categories: Java GC
 
 <br>
 
-* 장점은 stop-the-world 시간이 짧다.
+* 장점은 stop-the-world 시간이 짧다.  
+
 > 즉, 전체 스레드를 멈추고 수행되는 것이 아니라
 >
 > 다른 스레드가 실행 중인 상태에서 동시에 수행되는 연산이 많기 때문이다.
@@ -208,20 +213,21 @@ categories: Java GC
 * Young 영역과 Old 영역을 나누지 않고
 * 바둑판 모양 각 영역에 객체를 할당한다.
 * 모든 GC 방식중에 가장 빠르다.  
-![image](https://user-images.githubusercontent.com/25604495/82412694-0b6f0180-9aaf-11ea-9a30-9f9fe6f2f722.png)  
+
+<img src = "https://user-images.githubusercontent.com/25604495/82412694-0b6f0180-9aaf-11ea-9a30-9f9fe6f2f722.png" width="600" height="300" />
 
 <br>
 
 ## Next
 * Young과 Old 영역, GC 방식에 대해 간단하게 알아봤다.
-* 추후에 실제로 필요한 일이 생긴다면 각 GC 방식에 대해 더 자세히 알아봐야겠다..
+* 추후에 실제로 사용할 일이 생긴다면 각 GC 방식에 대해 더 자세히 알아봐야겠다.
 
 <br>
 
 
 ## Reference
-* https://d2.naver.com/helloworld/1329
-* https://5dol.tistory.com/183
-* https://johngrib.github.io/wiki/java-gc-eden-to-survivor/
-* https://deveric.tistory.com/64?category=346694
-* https://preamtree.tistory.com/118
+* [https://d2.naver.com/helloworld/1329](https://d2.naver.com/helloworld/1329)  
+* [https://5dol.tistory.com/183](https://5dol.tistory.com/183)  
+* [https://johngrib.github.io/wiki/java-gc-eden-to-survivor/](https://johngrib.github.io/wiki/java-gc-eden-to-survivor/)  
+* [https://deveric.tistory.com/64?category=346694](https://deveric.tistory.com/64?category=346694)  
+* [https://preamtree.tistory.com/118](https://preamtree.tistory.com/118)  

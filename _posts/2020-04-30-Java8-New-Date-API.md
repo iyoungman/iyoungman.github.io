@@ -5,6 +5,11 @@ tags: Java Java8 Date Calendar LocalDate LocalTime ModernJavaInAction
 categories: Java
 ---
 
+* TOC
+{:toc}  
+  
+<br>  
+
 ## Summary
 * Java8이전의 날짜 API의 문제점을 알아본다.
 * Java8의 새로운 날짜와 시간 라이브러리를 알아본다.
@@ -96,7 +101,8 @@ calendar.add(Calendar.DECEMBER, 2);
 ## LocalDate와 LocalTime
 * LocalDate는 날짜를 표현하며 
 * LocalTime은 시간을 표현한다.
-* 장점은 크게 두가지라고 생각한다.
+* 장점은 크게 두가지라고 생각한다.  
+
 > 1. 불변객체이다.
 >
 > 2. 내장 메서드를 이용해 편리하게 사용할 수 있어 직관적이다.
@@ -116,10 +122,12 @@ int second = time.getSecond(); // 20
   
 <br>  
 
-* 그밖에 참고 : ~~1.1. LocalDate, 1.2. LocalTime~~ 주요 메서드
+* 그밖에 참고 : ~~1.1. LocalDate, 1.2. LocalTime~~ 주요 메서드  
+
 > [자바8의 java.time 패키지(LocalDate, LocalTime, LocalDateTime 등)](http://blog.eomdev.com/java/2016/04/01/%EC%9E%90%EB%B0%948%EC%9D%98-java.time-%ED%8C%A8%ED%82%A4%EC%A7%80.html)
 
-* 그밖에 참고 : ~~날짜 변환하기~~
+* 그밖에 참고 : ~~날짜 변환하기~~  
+
 > [Java 8 날짜와 시간 계산](https://madplay.github.io/post/java8-date-and-time)
 
 <br>  
@@ -158,7 +166,8 @@ LocalDate date4 = date3.plus(3, ChronoUnit.MONTHS); // 2014-08-18
   
 <br>  
 
-* 그밖에 참고 : ~~특정 시점을 표현하는 날짜 시간 클래스의 공통 메서드~~
+* 그밖에 참고 : ~~특정 시점을 표현하는 날짜 시간 클래스의 공통 메서드~~  
+  
 > [[자바 8] CH12 - 새로운 날짜와 시간 API](http://blog.naver.com/PostView.nhn?blogId=hehe5959&logNo=221003414774&parentCategoryNo=&categoryNo=20&viewDate=&isShowPopularPosts=true&from=search)
 
 
@@ -170,8 +179,3 @@ LocalDate date4 = date3.plus(3, ChronoUnit.MONTHS); // 2014-08-18
 * [https://d2.naver.com/helloworld/645609](https://d2.naver.com/helloworld/645609)
 * [https://www.geeksforgeeks.org/date-class-java-examples/](https://www.geeksforgeeks.org/date-class-java-examples/)
 * [https://www.geeksforgeeks.org/calendar-class-in-java-with-examples/](https://www.geeksforgeeks.org/calendar-class-in-java-with-examples/)
-
-<br>  
-
-* TOC
-{:toc}  

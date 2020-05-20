@@ -4,14 +4,21 @@ title: HackerRank. New year chaos
 tags: Algorithm HackerRank Array Sort Java
 categories: Algorithm
 ---
+
+* TOC
+{:toc}  
+
+<br>
+
 ## Problem
 [https://www.hackerrank.com/challenges/new-year-chaos/problem](https://www.hackerrank.com/challenges/new-year-chaos/problem)  
   
 <br>  
 
 ## Think
-1) 처음에 푼 코드가 TimeOut이 발생하여 고민하다 다른 Solution을 참고했다.  
-2) 나중에 다시 한번 풀어보자.  
+* 처음에 푼 코드가 TimeOut이 발생하여 고민하다 다른 Solution을 참고했다.
+
+* 다시 풀어볼 문제.  
   
 <br> 
 

@@ -22,9 +22,11 @@ categories: Algorithm
 >
 > expenditure[i]에 대한 counting 배열을 두고 매번 검사한다.
 >
-> 그러면 O(n) = 2 x 10의 5승 x 200 기 때문에 시간은 충분하다.  
+> 그러면 O(n) = 2 x 10^5 x 200 기 때문에 시간은 충분하다.  
 
-* 나중에 다시한번 풀어보자.
+<br>
+
+* 다시 풀어볼 문제.  
 
 
 <br>  
@@ -135,14 +137,14 @@ private static double getMedian(int[] counts, int d) {
 ## Solved Process
 1) 주어진 변수 d 범위 만큼 count를 구한다.
 
-2) 중간값을 구한다.
+2) 중간값을 구한다.  
 > 이때 counts 배열을 이용한다.
 >
 > 문제의 조건에 맞게 d가 짝수일때, 홀수일때의 로직이 달라진다.
 
 <br>
 
-3) counts를 조정한다.
+3) counts를 조정한다.  
 > 맨 앞에있는 index의 count를 -1
 >
 > 맨 뒤에있는 index의 count를 +1

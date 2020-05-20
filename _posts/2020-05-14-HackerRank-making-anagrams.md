@@ -4,13 +4,19 @@ title: HackerRank. Making Anagrams
 tags: Algorithm HackerRank String Java
 categories: Algorithm
 ---
+
+* TOC
+{:toc}  
+
+<br>
+
 ## Problem
 [https://www.hackerrank.com/challenges/ctci-making-anagrams/problem](https://www.hackerrank.com/challenges/ctci-making-anagrams/problem)  
   
 <br>  
 
 ## Think
-* 단순한 String 문제이다.  
+* 직접 해결한 문제.
   
 <br>  
 
