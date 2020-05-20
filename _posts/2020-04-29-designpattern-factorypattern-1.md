@@ -100,6 +100,7 @@ public class Client {
 * 어찌어찌해서 각 Client에서 Chicken을 생성했다고 가정하자.
 * 새로운 종류의 치킨이 추가/삭제 되었을때
 * `각 Client마다 수정을 해야한다.`  
+  
 > 위의 예제에서 GrilledChicken이 없어졌다고 생각해보자.
 >
 > 각 Client에서 Switch문을 수정해줘야 할 것이다.  
@@ -180,6 +181,7 @@ public class SimpleChickenFactory {
   
 ## Next
 * 위에서 간단한 Factory 패턴을 구현했다.
-* 다음 포스팅에서는 구체화된 Factory 패턴의 2가지 종류를 알아본다.
+* 다음 포스팅에서는 구체화된 Factory 패턴의 2가지 종류를 알아본다.  
+
 > Factory 메서드 패턴  
 > 추상 Factory 패턴

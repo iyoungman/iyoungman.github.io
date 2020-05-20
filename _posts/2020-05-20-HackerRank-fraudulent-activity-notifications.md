@@ -4,6 +4,12 @@ title: HackerRank. Fraudulent Activity Notifications
 tags: Algorithm HackerRank Sort Java
 categories: Algorithm
 ---
+
+* TOC
+{:toc}  
+
+<br>
+
 ## Problem
 [https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)  
   
@@ -138,6 +144,7 @@ private static double getMedian(int[] counts, int d) {
 1) 주어진 변수 d 범위 만큼 count를 구한다.
 
 2) 중간값을 구한다.  
+
 > 이때 counts 배열을 이용한다.
 >
 > 문제의 조건에 맞게 d가 짝수일때, 홀수일때의 로직이 달라진다.
@@ -145,6 +152,7 @@ private static double getMedian(int[] counts, int d) {
 <br>
 
 3) counts를 조정한다.  
+
 > 맨 앞에있는 index의 count를 -1
 >
 > 맨 뒤에있는 index의 count를 +1

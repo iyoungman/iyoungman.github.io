@@ -40,8 +40,8 @@ categories: Algorithm
 > ex) aabbcccc -> a : 2, b : 2, c : 4
 <br>   
 
-* 위 순서대로 검증을 하면 될것 같다.
-
+* 위 순서대로 검증을 하면 될것 같다.  
+<br> 
 * 직접 해결한 문제.
 
 <br>  
@@ -111,6 +111,6 @@ private static boolean isAllSame(List<Integer> values) {
 
 ## Solved Process
 1) 계산의 편의성을 위해 정렬을 했다.  
-2) [Think](##Think)의 1 과정이다.  
-3) [Think](##Think)의 2 과정이다.  
-4) [Think](##Think)의 3 과정이다. 
+2) [Think](#Think)의 1 과정이다.  
+3) [Think](#Think)의 2 과정이다.  
+4) [Think](#Think)의 3 과정이다. 
