@@ -6,10 +6,7 @@ categories: Algorithm
 ---
 
 * TOC
-{:toc}  
-
-<br>
-
+{:toc}
 ## Problem
 [https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem)  
   

@@ -5,6 +5,8 @@ tags: Java Eqauls HashCode HashMap
 categories: Java
 ---
  
+* TOC
+{:toc}
 ## Summary
 * Java의 equals()와 hashCode()에 대해 알아본다.
 * equals()와 hashCode()를 함께 재정의하는 이유를 알아본다.
@@ -184,8 +186,3 @@ class Three {
 
 ## Reference
 * [한빛미디어-이것이 자바다 그림 참조](https://slidesplayer.org/slide/14091546/)
-
-<br>  
-
-* TOC
-{:toc}  

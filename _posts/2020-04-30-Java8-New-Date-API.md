@@ -6,10 +6,7 @@ categories: Java
 ---
 
 * TOC
-{:toc}  
-  
-<br>  
-
+{:toc}
 ## Summary
 * Java8이전의 날짜 API의 문제점을 알아본다.
 * Java8의 새로운 날짜와 시간 라이브러리를 알아본다.

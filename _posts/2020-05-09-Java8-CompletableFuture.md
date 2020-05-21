@@ -4,7 +4,9 @@ title: Java8. CompletableFuture
 tags: Java Java8 CompletableFuture 비동기 ModernJavaInAction
 categories: Java
 ---
-  
+
+* TOC
+{:toc}  
 ## Summary
 * Java8, Java9 에서는 코드를 비동기로 실행하는 방법을 제공한다.
 * CompletableFuture와 리액티브 프로그래밍이 있다.
@@ -386,8 +388,3 @@ public class Main {
 ## Reference  
 * [모던 자바 인 액션](http://www.yes24.com/Product/Goods/77125987?Acode=101)  
 * [그림 참조](http://blog.engineering.publicissapient.fr/wp-content/uploads/2020/03/Future.png)  
-
-<br>  
-
-* TOC
-{:toc}  

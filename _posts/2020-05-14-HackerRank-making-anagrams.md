@@ -6,10 +6,7 @@ categories: Algorithm
 ---
 
 * TOC
-{:toc}  
-
-<br>
-
+{:toc}
 ## Problem
 [https://www.hackerrank.com/challenges/ctci-making-anagrams/problem](https://www.hackerrank.com/challenges/ctci-making-anagrams/problem)  
   

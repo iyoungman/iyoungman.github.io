@@ -4,7 +4,9 @@ title: HackerRank. Queues - A Tale of Two Stacks
 tags: Algorithm HackerRank Queue Stack
 categories: Algorithm
 ---
- 
+
+* TOC
+{:toc}
 ## Problem
 [https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem](https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem)    
   
@@ -56,8 +58,3 @@ class MyQueue<T> {
 > MyQueue에 enqueue()할때마다 Stack two를 재정렬하면 효율성에 문제가 발생한다.  
 >
 > Stack two가 비었을 시점에만 Stack one의 데이터를 옮기면 된다.  
-
-<br>  
-
-* TOC
-{:toc}  
