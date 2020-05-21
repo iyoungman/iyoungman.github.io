@@ -14,7 +14,7 @@ categories: Java GC
 * JVM Heap의 Young, Old 영역에 대해 알아본다.
 * Minor GC와 Major GC에 대해 알아본다.  
 * GC 방식에 대해 알아본다.
-  
+<!--break-->
 <br>  
 
 ## Heap의 Young, Old 영역
