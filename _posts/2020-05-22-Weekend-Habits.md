@@ -74,7 +74,7 @@ categories: Improvement
 
 <br>  
 
-12. **일찍 일어나라.**
+12) **일찍 일어나라.**
 * 아침 시간 활용은 중요하다.
 * 집중력은 기상 후 2 ~ 4.5 까지 선명하다.
 
@@ -82,4 +82,4 @@ categories: Improvement
 
 
 ## Reference
-* https://www.youtube.com/watch?v=Kg4IGsd_ZK4
+* [https://www.youtube.com/watch?v=Kg4IGsd_ZK4](https://www.youtube.com/watch?v=Kg4IGsd_ZK4)
