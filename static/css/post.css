@@ -163,3 +163,14 @@
     -ms-user-select: none;
     user-select: none;
 }
+
+/* ========================== custom ==========================*/
+
+strong {
+    color: #01DFD7;
+}
+
+hr {
+    border-style: solid;
+    border-height: 2px;
+}
