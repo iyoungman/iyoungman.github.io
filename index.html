@@ -17,7 +17,7 @@ layout: default
                       {{ post.title }}
                   </a>
 <!--                   <p>{% if post.excerpt.size > 32 %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 160 }}{% endif %}</p> -->
-                  <p>{{ post.excerpt | strip_html }}</p>
+                  <p>{{ post.excerpt }}</p>
                   
                   <a class="readmore" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Read More</a>
                   <footer>
