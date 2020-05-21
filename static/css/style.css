@@ -272,3 +272,8 @@ a:active {text-decoration: none}	/* 选定的链接 */
 strong {
     color: #01DFD7;
 }
+
+hr {
+    border-style: solid;
+    border-height: 2px;
+}
