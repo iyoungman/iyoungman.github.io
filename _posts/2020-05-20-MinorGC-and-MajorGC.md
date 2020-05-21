@@ -6,7 +6,8 @@ categories: Java GC
 ---
 
 * TOC
-{:toc}  
+{:toc}
+
 ## Summary
 * JVM Heap의 Young, Old 영역에 대해 알아본다.
 * Minor GC와 Major GC에 대해 알아본다.  
