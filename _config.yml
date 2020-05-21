@@ -41,3 +41,6 @@ disqus:
 
 url: "https://iyoungman.github.io"
 imgrepo: "https://iyoungman.github.io/static/img"
+
+# Excerpt
+excerpt_separator: <!--break-->
