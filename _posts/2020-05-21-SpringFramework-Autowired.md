@@ -5,6 +5,8 @@ tags: Spring @Autowired
 categories: Spring
 ---
 
+* TOC
+{:toc}
 ## @Autowired
 * 필요한 의존 객체의 **타입**에 해당하는 빈을 찾아 주입한다.
 * 선언한 빈을 못 찾으면 애플리케이션 구동 안된다.   
@@ -153,10 +155,13 @@ public class OtherService implements InitializingBean {
 * 다음은 빈 초기화 LifeCycle 일부이다.
 ![image](https://user-images.githubusercontent.com/25604495/82553608-536d5180-9b9f-11ea-9ae7-cfda63fbe667.png)  
 
+<br>
+ 
 * BeanPostPorcessor는 이중 두가지 메서드를 제공한다.(11, 14)
 ![image](https://user-images.githubusercontent.com/25604495/82553138-70555500-9b9e-11ea-84b2-009c3889dcc0.png)  
 
-
+<br>
+ 
 * BeanPostProcessor의 postProcessBeforeInitialization() LifeCycle에 
 * AutowiredAnnotationBeanPostProcessor가 동작해서@Autowired 라는 Annotation을 찾아 해당 타입의 Bean을 주입해 준다.
 
