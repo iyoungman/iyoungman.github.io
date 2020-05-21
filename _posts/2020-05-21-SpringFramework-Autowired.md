@@ -7,6 +7,8 @@ categories: Spring
 
 * TOC
 {:toc}
+> 강의 내용을 바탕으로 정리.  
+
 ## @Autowired
 * 필요한 의존 객체의 **타입**에 해당하는 빈을 찾아 주입한다.
 * 선언한 빈을 못 찾으면 애플리케이션 구동 안된다.   
@@ -174,5 +176,5 @@ public class OtherService implements InitializingBean {
 <br>
 
 ## Reference
-* https://www.inflearn.com/course/spring-framework_core/lecture/15508
-* https://javaslave.tistory.com/48
+* [https://www.inflearn.com/course/spring-framework_core/lecture/15508](https://www.inflearn.com/course/spring-framework_core/lecture/15508)
+* [https://javaslave.tistory.com/48](https://javaslave.tistory.com/48)
