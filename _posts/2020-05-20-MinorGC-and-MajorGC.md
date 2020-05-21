@@ -3,9 +3,11 @@ layout: post
 title: Minor GC 와 Major GC
 tags: Java
 categories: Java GC
-toc: true
+excerpt: JVM Heap의 Young, Old 영역에 대해 알아본다.
 ---
 
+* TOC
+{:toc}
 ## Summary
 * JVM Heap의 Young, Old 영역에 대해 알아본다.
 * Minor GC와 Major GC에 대해 알아본다.  
