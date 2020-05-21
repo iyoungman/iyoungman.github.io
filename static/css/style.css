@@ -266,3 +266,9 @@ a:active {text-decoration: none}	/* 选定的链接 */
         font-size: 36px;
     }
 }
+
+/* ========================== custom ==========================*/
+
+strong {
+    color: #01DFD7;
+}
