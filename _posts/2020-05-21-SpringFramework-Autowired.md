@@ -148,18 +148,21 @@ public class OtherService implements InitializingBean {
 ***
 
 ### AutowiredAnnotationBeanPostProcessor
-* BeanPostProcessor를 상속받고 있다.
+* BeanPostProcessor를 상속받고 있다.  
+
 ![1_상속구조](https://user-images.githubusercontent.com/25604495/82553370-d93ccd00-9b9e-11ea-828e-7c07cc2a4688.PNG)
 
 <br>
 
 
-* 다음은 빈 초기화 LifeCycle 일부이다.
+* 다음은 빈 초기화 LifeCycle 일부이다.  
+
 ![image](https://user-images.githubusercontent.com/25604495/82553608-536d5180-9b9f-11ea-9ae7-cfda63fbe667.png)  
 
 <br>
  
-* BeanPostPorcessor는 이중 두가지 메서드를 제공한다.(11, 14)
+* BeanPostPorcessor는 이중 두가지 메서드를 제공한다.(11, 14)  
+
 ![image](https://user-images.githubusercontent.com/25604495/82553138-70555500-9b9e-11ea-84b2-009c3889dcc0.png)  
 
 <br>
