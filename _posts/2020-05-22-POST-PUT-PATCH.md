@@ -78,7 +78,7 @@ PUT /board/1 HTTP/1.1
 
 <br>
 
-* 요청 전
+* 요청 전  
 ```json
 {
     title : "title",
@@ -88,7 +88,7 @@ PUT /board/1 HTTP/1.1
 
 <br>
 
-* PUT 요청 & 결과
+* PUT 요청 & 결과  
 ```json
 PUT /board/1 HTTP/1.1
 {
@@ -104,7 +104,7 @@ PUT /board/1 HTTP/1.1
 
 <br>
 
-* PATCH 요청 & 결과
+* PATCH 요청 & 결과  
 ```json
 PATCH /board/1 HTTP/1.1
 {
@@ -132,7 +132,7 @@ PATCH /board/1 HTTP/1.1
 
 ### 예제
 
-* 요청 전 
+* 요청 전  
 ```json
 {
     title : "title",
@@ -146,7 +146,7 @@ PATCH /board/1 HTTP/1.1
 
 <br>  
 
-* Client X 요청 & 결과
+* Client X 요청 & 결과  
 ```json
 PATCH /board/1 HTTP/1.1
 {
@@ -163,7 +163,7 @@ PATCH /board/1 HTTP/1.1
 
 <br>  
 
-* Client Y 요청 & 결과
+* Client Y 요청 & 결과  
 ```json
 PATCH /board/1 HTTP/1.1
 {
@@ -179,7 +179,7 @@ PATCH /board/1 HTTP/1.1
 
 <br>  
 
-* Client X 다시 같은 요청 & 결과
+* Client X 다시 같은 요청 & 결과  
 ```json
 PATCH /board/1 HTTP/1.1
 {
