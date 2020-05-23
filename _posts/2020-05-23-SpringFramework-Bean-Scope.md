@@ -26,7 +26,7 @@ categories: Spring
 * Prototype 빈이 Singleton 빈을 참조
     * 문제 없다.
 * Singleton 빈이 Prototype 빈을 참조
-    * `하나의 Prototype 빈만 가져온다.`  
+    * **하나의 Prototype 빈만 가져온다.**  
 <br>  
 
 * 예제 코드  
@@ -77,7 +77,7 @@ prototype of singleton 2 : com.iyoungman.spring.core.scope.ProtoTypeBean@17ba57f
 <br>
 
 ## Sigleton에서 Prototype 답게 참조하려면?  
-* ProxyMode 설정만 바꿔주면된다.
+* **ProxyMode** 설정만 바꿔주면된다.
 * 나머지 코드는 위와 동일하다.
 
 ```java
