@@ -26,7 +26,10 @@ categories: Spring
 * Prototype 빈이 Singleton 빈을 참조
     * 문제 없다.
 * Singleton 빈이 Prototype 빈을 참조
-    * `하나의 Prototype 빈만 가져온다.`
+    * `하나의 Prototype 빈만 가져온다.`  
+<br>  
+
+* 예제 코드  
 
 ```java
 @Component
@@ -65,9 +68,8 @@ public class Runner implements ApplicationRunner {
 ```
 
 ```java
-2020-05-23 14:36:16.515  INFO 4852 --- [           main] com.iyoungman.spring.core.scope.Runner   : prototype of singleton 1 : com.iyoungman.spring.core.scope.ProtoTypeBean@17ba57f0
-2020-05-23 14:36:16.516  INFO 4852 --- [           main] com.iyoungman.spring.core.scope.Runner   : prototype of singleton 2 : com.iyoungman.spring.core.scope.ProtoTypeBean@17ba57f0
-
+prototype of singleton 1 : com.iyoungman.spring.core.scope.ProtoTypeBean@17ba57f0
+prototype of singleton 2 : com.iyoungman.spring.core.scope.ProtoTypeBean@17ba57f0
 ```
 
 > Log를 확인해보면 같은 Prototype 인스턴스를 가져온다.
@@ -84,12 +86,11 @@ public class Runner implements ApplicationRunner {
 public class ProtoTypeBean {
 
 }
-
 ```
 
 ```java
-2020-05-23 14:38:47.925  INFO 29740 --- [           main] com.iyoungman.spring.core.scope.Runner   : prototype of singleton 1 : com.iyoungman.spring.core.scope.ProtoTypeBean@53ed80d3
-2020-05-23 14:38:47.928  INFO 29740 --- [           main] com.iyoungman.spring.core.scope.Runner   : prototype of singleton 2 : com.iyoungman.spring.core.scope.ProtoTypeBean@48e8c32a
+prototype of singleton 1 : com.iyoungman.spring.core.scope.ProtoTypeBean@53ed80d3
+prototype of singleton 2 : com.iyoungman.spring.core.scope.ProtoTypeBean@48e8c32a
 ```
 
 > Log를 확인해보면 다른 Prototype 인스턴스를 가져온다.
@@ -106,11 +107,6 @@ public class ProtoTypeBean {
     * 주입시마다 해당 빈을 바꿔줄 수 없을 것이다.  
   
 ![image](https://user-images.githubusercontent.com/25604495/82722857-51250780-9d05-11ea-86e0-942202e5a596.png)  
-
-
-
-
-
 
 <br>  
 
