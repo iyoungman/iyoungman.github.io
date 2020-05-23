@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 스프링 프레임워크 핵심 기술. 빈의 스코프
+title: 스프링 프레임워크 핵심 기술 - 빈의 스코프
 tags: Spring Scope
 categories: Spring
 ---
@@ -26,7 +26,7 @@ categories: Spring
 * Prototype 빈이 Singleton 빈을 참조
     * 문제 없다.
 * Singleton 빈이 Prototype 빈을 참조
-    * `하나의 Prototype 빈만 가져온다.`
+    * **하나의 Prototype 빈만 가져온다.**
 
 ```java
 @Component

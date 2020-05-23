@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 스프링 프레임워크 핵심 기술. @Autowired
+title: 스프링 프레임워크 핵심 기술 - @Autowired
 tags: Spring @Autowired
 categories: Spring
 ---
@@ -20,9 +20,8 @@ boolean required() default true;
 <br>
 
 ## 사용할 수 있는 위치
-1) 생성자
+1) 생성자  
 > 스프링 4.3 부터는 생략 가능
-
 
 2) 세터
 
@@ -166,9 +165,9 @@ public class OtherService implements InitializingBean {
 ![image](https://user-images.githubusercontent.com/25604495/82553138-70555500-9b9e-11ea-84b2-009c3889dcc0.png)  
 
 <br>
- 
+
 * BeanPostProcessor의 postProcessBeforeInitialization() LifeCycle에 
-* AutowiredAnnotationBeanPostProcessor가 동작해서@Autowired 라는 Annotation을 찾아 해당 타입의 Bean을 주입해 준다.
+* AutowiredAnnotationBeanPostProcessor가 동작해서 @Autowired 라는 Annotation을 찾아 해당 타입의 Bean을 주입해 준다.
 
 <br>
 
