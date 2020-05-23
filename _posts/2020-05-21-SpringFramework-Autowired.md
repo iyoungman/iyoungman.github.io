@@ -102,7 +102,7 @@ public class OtherService {
  
 ### BeanPostProcessor
 * 빈의 인스턴스를 만드는 LifeCycle이 있다.
-* BeanPostProcessor는 `빈의 initialization Life Cycle 이전과 이후`에 또 다른 부가적인 작업을 할 수 있는 LifeCycle CallBack.
+* BeanPostProcessor는 **빈의 initialization Life Cycle 이전과 이후**에 또 다른 부가적인 작업을 할 수 있는 LifeCycle CallBack.
 
 <br>
 
