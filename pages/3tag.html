@@ -30,6 +30,7 @@ scripts: [tagCloud.js,tags.js]
         <li itemscope><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%Y-%m-%d" }}</time></span> &raquo; <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></li>
         {% endif %}{% endfor %}{% endfor %}
     </ul>
+    <br>
     {% endfor %}
 </div>
 
