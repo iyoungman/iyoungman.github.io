@@ -1,3 +1,22 @@
+div {
+	width: 100%;
+        height: 300px;
+        
+        border: 1px solid #000;
+}
+
+div.left {
+	width: 70%;
+	float: left;
+	box-sizing: border-box;
+}
+
+div.right {
+	width: 30%;
+	float: right;
+	box-sizing: border-box;
+}
+
 article{
     padding:6px 0px 8px 0px;
     margin-top: 3em;
