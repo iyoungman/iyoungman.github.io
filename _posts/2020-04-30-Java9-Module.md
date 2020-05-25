@@ -47,6 +47,7 @@ categories: Java
 1) 제한된 가시성 제어
 * 자바는 클래스, 패키지 등의 코드 그룹화를 제공한다.
 * 클래스는 가시정을 제어를 위해 접근 제어자를 이용한다.  
+
 > public, protected, default, private  
 
 <br>
