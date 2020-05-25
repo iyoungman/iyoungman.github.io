@@ -7,6 +7,10 @@ categories: Algorithm
 
 * TOC
 {:toc}
+> Array 문제.
+
+<br>  
+
 ## Problem
 [https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)  
   
@@ -15,6 +19,7 @@ categories: Algorithm
 ## Think
 * 시간복잡도를 고려해야한다.
 * 조건을 잘 봐야한다.  
+
 ![image](https://user-images.githubusercontent.com/25604495/82432563-3404f480-9acb-11ea-9095-862b01291cc0.png)  
 
 > 시간복잡도를 고려하지 않으면 Before Code와 같이 풀 수 있다.
@@ -36,6 +41,7 @@ categories: Algorithm
 
 
 ## Before Code
+
 ```java
 // Complete the activityNotifications function below.
 static int activityNotifications(int[] expenditure, int d) {
@@ -71,7 +77,8 @@ private static double getMedian(int[] temp) {
 
 <br>
 
-## Solved Code
+## Solved Code  
+
 ```java
 static int activityNotifications(int[] expenditure, int d) {
     int[] counts = new int[200 + 1];
@@ -137,7 +144,7 @@ private static double getMedian(int[] counts, int d) {
   
 <br>  
 
-## Solved Process
+## Solved Process  
 1) 주어진 변수 d 범위 만큼 count를 구한다.
 
 2) 중간값을 구한다.  

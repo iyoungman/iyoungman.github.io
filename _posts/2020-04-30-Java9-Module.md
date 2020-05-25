@@ -7,9 +7,9 @@ categories: Java
 
 * TOC
 {:toc}
-## Summary
-* 모듈을 사용하는 주요 동기를 이해한다.
-* 모듈을 어떻게 사용할지 살펴본다.
+> 모듈을 사용하는 주요 동기를 이해한다.
+>
+> 모듈을 어떻게 사용할지 살펴본다.
   
 <br>  
 
@@ -18,7 +18,8 @@ categories: Java
 1) 관심사 분리
 * SoC(Separation of Concerns)
 * 각각의 부분을 기능 중심으로 분리한다.
-* 이를 클래스를 그룹화한 모듈을 이용한다.
+* 이를 클래스를 그룹화한 모듈을 이용한다.  
+
 > 회계 애플리케이션은 개발한다고 가정하자.
 >
 > SoC를 적용하여 파싱, 분석, 레포트 기능을 각각의 모듈로 분리한다.
@@ -26,8 +27,8 @@ categories: Java
 <br>  
 
 * <U>패키지로 클래스를 그룹화 할 수 있지 않나?</U>
-* `자바9 모듈은 클래스가 어떤 다른 클래스를 볼 수 있는지를`
-* `컴파일 시간에 제어할 수 있다.`
+* 자바9 모듈은 클래스가 어떤 다른 클래스를 볼 수 있는지를
+* **컴파일 시간에 제어할 수 있다.**
 * 패키지는 모듈성을 지원하지 않는다.
 
 <br>  
@@ -36,7 +37,7 @@ categories: Java
 * 세부 구현을 숨겨 어떤 부분이 변경되었을 떄
 * 다른 부분까지 미칠 영향을 줄일 수 있다.
 * 자바에서는 이러한 캡슐화를 pivate 접근제어자로 제공한다.
-* 하지만 `자바9 이전에는 클래스와 패키지가 의도된 대로 공개되었는지` 알 수 없다.
+* 하지만 **자바9 이전에는 클래스와 패키지가 의도된 대로 공개되었는지** 알 수 없다.
 
 <br>  
 
@@ -45,8 +46,11 @@ categories: Java
 ### 자바9 이전 모듈화의 한계
 1) 제한된 가시성 제어
 * 자바는 클래스, 패키지 등의 코드 그룹화를 제공한다.
-* 클래스는 가시정을 제어를 위해 접근 제어자를 이용한다.
-> public, protected, default, private
+* 클래스는 가시정을 제어를 위해 접근 제어자를 이용한다.  
+> public, protected, default, private  
+
+<br>
+ 
 * 하지만, 패키지간의 가시성 제어는 없다.
 
 
@@ -129,6 +133,7 @@ public class Module1Service {
 
 
 * Module2의 구조와 코드   
+
 <img src = "https://user-images.githubusercontent.com/25604495/80907777-9a141c80-8d54-11ea-8ba5-95a47821b1cb.png" width="400" height="300" />  
 
 ```java
@@ -152,8 +157,9 @@ public class Main {
 
 4) 모듈 디스크립터를 정의한다.
 * 모듈 디스크립터는 크게 두가지 역할을 한다.
-* `자신 모듈에 속한 패키지 가시성을 제어하거나`
-* `다른 모듈을 가져온다.`
+* **자신 모듈에 속한 패키지 가시성을 제어하거나**
+* **다른 모듈을 가져온다.**
+
 > 예제에서는 Module2에서 Module1의 기능을 가져와서 사용할 것이다.
 >
 > 다만, Module1에서는 외부 인터페이스 역할인 api 패키지만 외부로 노출하고
@@ -162,9 +168,10 @@ public class Main {
   
 <br>  
 
-* 일단 Module1와 Module2에 각각 모듈 디스크립터인 `module-info.java`를 추가한다.
+* 일단 Module1와 Module2에 각각 모듈 디스크립터인 **module-info.java**를 추가한다.
 * 각 모듈의 Root에 위치해야한다.  
-> 3)의 그림을 참조하자.
+
+> 3)의 그림을 참조하자.  
 
 ```java
 //module1의 module-info.java
@@ -209,7 +216,7 @@ module module2 {
 * 만약 외부 라이브러리를 주입받고 싶다면
 * Maven/Gradle 등과 함께 사용하면 된다.
 * pom.xml에 필요한 의존성 기입 후 
-* module-info.java에서 `require` 해준다.
+* module-info.java에서 **require** 해준다.
 
 <br>  
 
@@ -252,7 +259,8 @@ module module2 {
   
 <br>  
 
-* Module2의 module-info.java
+* Module2의 module-info.java  
+
 ```java
 module module2 {
     requires module1;
@@ -267,26 +275,30 @@ module module2 {
 <br>  
 
 ## 모듈 정의와 구문들
-* requires
+* requires  
+
 > 다른 모듈을 가져올 때
 >
 > requires 모듈;
 
 <br>  
 
-* exports
+* exports  
+
 > 다른 모듈로 패키지를 내보낼 때
 >
 > exports 패키지;
 
 <br>  
 
-* requires transitive
+* requires transitive  
+
 > requires를 전이한다.
 
 <br>  
 
-* exports to
+* exports to  
+
 > 사용자에게 공개할 기능을 제한한다.
 
   

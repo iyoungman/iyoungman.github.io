@@ -7,6 +7,10 @@ categories: Algorithm
 
 * TOC
 {:toc}
+> Sort 문제.
+
+<br>  
+
 ## Problem
 [https://www.hackerrank.com/challenges/new-year-chaos/problem](https://www.hackerrank.com/challenges/new-year-chaos/problem)  
   
@@ -19,7 +23,8 @@ categories: Algorithm
   
 <br> 
 
-## Solved Code
+## Solved Code  
+
 ```java
 // Complete the minimumBribes function below.
 static void minimumBribes(int[] q) {
@@ -67,7 +72,7 @@ private static void swap(int i, int j, int[] q) {
 <br>   
 
 ## Solved Process
-1) 뒷번호가 앞에 있는지 검증하는 과정에서 2번 초과로 뇌물을 줬으면 `Too chaotic`을 출력하고 종료한다.
+1) 뒷번호가 앞에 있는지 검증하는 과정에서 2번 초과로 뇌물을 줬으면 `Too chaotic`을 출력하고 종료한다.  
 > 핵심은 뒷번호만 앞번호에게 뇌물을 줄 수 있다는 것이다.
 >
 > 따라서 `int sub = q[i] - (i + 1);`와 같은 코드가 나온다.
@@ -78,10 +83,10 @@ private static void swap(int i, int j, int[] q) {
 
 <br>
 
-2) 원래 순서가 아닐경우 Swap 횟수를 세는 과정이다.
+2) 원래 순서가 아닐경우 Swap 횟수를 세는 과정이다.  
 > 주의할점은 앞으로 한칸씩만 이동할 수 있다는 사실이다.  
 
 <br>
 
-3) 코드의 가독성을 위해 `i--`로 하였다.
+3) 코드의 가독성을 위해 `i--`로 하였다.  
 > j에서 i까지 반복문을 돌며 count를 세도 될것같다.

@@ -7,9 +7,9 @@ categories: Java
  
 * TOC
 {:toc}
-## Summary
-* Java의 equals()와 hashCode()에 대해 알아본다.
-* equals()와 hashCode()를 함께 재정의하는 이유를 알아본다.
+> Java의 equals()와 hashCode()에 대해 알아본다.
+>
+> equals()와 hashCode()를 함께 재정의하는 이유를 알아본다.
   
 <br>  
 
@@ -20,19 +20,22 @@ categories: Java
 * 재정의한다.
 
 ### equals()
-* Object 클래스의 equals() 메서드이다.
+* Object 클래스의 equals() 메서드이다.  
+
 ```java  
 public boolean equals(Object obj) {
         return (this == obj);
 }
 ```
+
 > 객체관의 동등 처리를 `주소값`으로 비교하고 있다.
 >
 > 단순 '값'으로 비교하고 싶다면 재정의(Override)한다.
   
 <br>  
 
-* 아래는 String 클래스에서 재정의한 equals() 메서드이다.
+* 아래는 String 클래스에서 재정의한 equals() 메서드이다.  
+
 ```java
  public boolean equals(Object anObject) {
         if (this == anObject) {
@@ -54,8 +57,11 @@ public boolean equals(Object obj) {
 <br>  
 
 ### hashCode()
-* 해시 코드란?
-> 객체를 구분하기 위한 정수이다.
+* 해시 코드란?  
+
+> 객체를 구분하기 위한 정수이다. 
+
+<br>  
 
 * Object 클래스에서는 객체의 메모리 번지를 이용해 해시코드를 반환한다.
   
@@ -153,6 +159,7 @@ class Three {
 <br>  
 
 * HashMap, HashSet, HashTable 같이 해시 함수를 이용하는 자료구조에서는 아래와 같은 과정을 거친다.  
+
 ![image](https://user-images.githubusercontent.com/25604495/81193180-06fa1180-8ff6-11ea-826f-ad905a1b0c86.png)  
   
 <br>  
@@ -179,7 +186,6 @@ class Three {
 * 따라서 위 HashMap의 코드에서 Key의 해시 버킷을 찾고(hashCode())
 * LinkedList에서 Key와 같은지 검증한 것이다.(equals())
 * 다음 포스팅에서는 HashMap에 대해 좀 더 자세히 알아보겠다.
-
 
 
 <br>  

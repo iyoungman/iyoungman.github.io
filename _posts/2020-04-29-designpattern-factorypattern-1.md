@@ -7,6 +7,10 @@ categories: DesignPattern
 
 * TOC
 {:toc}
+> Factory 패턴을 예제와 함께 알아본다.
+
+<br>  
+  
 ## Factory 패턴
 * 객체의 `생성과 사용을 분리`하는 디자인 패턴
 * 왜 생성과 사용을 분리해야할까?

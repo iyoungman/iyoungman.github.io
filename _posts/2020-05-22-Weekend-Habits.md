@@ -5,6 +5,10 @@ tags: Improvement
 categories: Improvement
 ---
 
+> 좋은 습관.  
+  
+<br>  
+
 ## List
 1) 주중을 반성하는 시간을 가져라.  
 * 주중에는 했던 일들을 적어놓기.

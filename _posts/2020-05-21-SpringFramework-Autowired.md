@@ -8,6 +8,10 @@ categories: Spring
 * TOC
 {:toc}
 > 강의 내용을 바탕으로 정리.  
+>
+> @Autowired 사용과 동작원리에 대해 알아본다.
+  
+<br>  
 
 ## @Autowired
 * 필요한 의존 객체의 **타입**에 해당하는 빈을 찾아 주입한다.

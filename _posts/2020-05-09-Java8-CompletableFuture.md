@@ -7,10 +7,11 @@ categories: Java
 
 * TOC
 {:toc}  
-## Summary
-* Java8, Java9 에서는 코드를 비동기로 실행하는 방법을 제공한다.
-* CompletableFuture와 리액티브 프로그래밍이 있다.
-* 이중 CompletableFuture를 알아본다.
+> Java8, Java9 에서는 코드를 비동기로 실행하는 방법을 제공한다.
+>
+> CompletableFuture와 리액티브 프로그래밍이 있다.
+>
+> 이중 CompletableFuture를 알아본다.
   
 <br>  
 
@@ -83,7 +84,8 @@ public class Main {
 <br>  
 
 2) Future의 단점
-* 다음과 같은 질의는 어떻게 처리할까?
+* 다음과 같은 질의는 어떻게 처리할까?  
+
 > 오래걸리는 A라는 작업이 끝나면
 >
 > 그 결과를 다른 오래 걸리는 B라는 작업으로 전달하라.
@@ -91,7 +93,7 @@ public class Main {
 > 그리고 B의 결과가 나오면 다른 질의 결과와 B의 결과를 조합하라.  
   
 * Future를 이용하여 이러한 코드를 구현하는 일은 복잡하다.
-* 이러한 복잡한 구현을 `선언적`으로 할 수 있다면 쉽게 구현하며, 코드의 가독성도 높을 것이다.
+* 이러한 복잡한 구현을 **선언적**으로 할 수 있다면 쉽게 구현하며, 코드의 가독성도 높을 것이다.
 * Java8에서는 Future의 구현체인 CompletableFuture를 통해 Future를 선언적으로 사용할 수 있다.
 
 
@@ -99,7 +101,8 @@ public class Main {
 
 ## 예제로 CompletableFuture 알아보기  
 * CompletableFuture를 통한 비동기 API 구현에 대해 살펴볼 것이다.
-* 예제는 다음과 같다.
+* 예제는 다음과 같다.  
+
 > 상점에서 특정 상품의 가격을 검색하는 애플리케이션을 만들것이다.
 >
 > 가격 정보를 얻는 과정에서 외부 서비스에 접근해야한다고 가정한다.
@@ -108,7 +111,7 @@ public class Main {
 
 ***  
 
-### Step1. 동기 메서드로 구현
+### Step1. 동기 메서드로 구현  
 ```java
 import lombok.extern.slf4j.Slf4j;
 
@@ -183,7 +186,7 @@ public class Shop {
 ***
 
 ### Step2. 동기 메서드를 비동기 메서드로 변환
-* `Shop의 getPrice()` 메서드를 다음과 같이 바꾼다.  
+* Shop의 getPrice() 메서드를 다음과 같이 바꾼다.  
 
 ```java
 public Future<Double> getPriceAsync(String product) {
@@ -200,6 +203,8 @@ public Future<Double> getPriceAsync(String product) {
 > CompletableFuture의 complete()
 >
 > 계산이 완료되면 Future에 값을 설정한다.
+
+<br>
 
 ```java
 public static void main(String[] args) throws Exception {
@@ -228,12 +233,13 @@ public static void main(String[] args) throws Exception {
 
 ### Step2-1. 에러 처리하기
 * Step2에서 Shop의 getPriceAsync()를 통해 별도의 스레드에서 일을 처리하고있다.
-* `하지만, 예외가 발생하면 해당 스레드에만 영향을 미칠것이다.`
+* **하지만, 예외가 발생하면 해당 스레드에만 영향을 미칠것이다.**
 * 따라서 해당 스레드에서 발생한 문제를
 * 호출자인 Main에 전달해야 한다.
-* 이는 `CompletableFuture의 completeExceptionally` 메서드를 이용한다.
+* 이는 **CompletableFuture의 completeExceptionally** 메서드를 이용한다.
 
-* Shop의 getPriceAsync()를 다음과 같이 바꾼다.
+* Shop의 getPriceAsync()를 다음과 같이 바꾼다.  
+
 ```java
 public Future<Double> getPriceAsync(String product) {
     CompletableFuture<Double> futurePrice = new CompletableFuture<>();
@@ -255,7 +261,7 @@ public Future<Double> getPriceAsync(String product) {
 
 ***
 
-### Step3. 비블록 코드 만들기
+### Step3. 비블록 코드 만들기  
 > 지금까지의 가정을 조금 바꿔본다.
 >
 > Step2까지는 Shop 클래스를 직접 비동기 방식으로 바꿨다.
@@ -266,7 +272,8 @@ public Future<Double> getPriceAsync(String product) {
 
 <br>  
 
-* 다음은 Step2와 Step3에서 구현할 코드의 차이점이다.
+* 다음은 Step2와 Step3에서 구현할 코드의 차이점이다.  
+
 > 둘다 비동기 방식이다.
 >
 > 다만, Step2는 호출받는 쪽에서 비동기 방식으로 반환한다.
@@ -300,9 +307,10 @@ private static void doSomething() {
 
 <br>  
 
-### Step3.1 병렬 스트림 vs CompletableFuture
+### Step3.1 병렬 스트림 vs CompletableFuture  
 * 만약 List 형태로 여러 Shop을 처리한다고 생각해보자
-* 이때 `병렬 스트림을 사용하는 방식과 CompletableFuture로 비동기 처리하는 것의 차이점이 있을까?
+* 이때 **병렬 스트림을 사용하는 방식과 CompletableFuture로 비동기 처리하는 것의 차이점이 있을까?**
+
 > 결론부터 말하면 CompletableFuture는 작업에 이용할 수 있는 Executor를 지정할 수 있다.
 >
 > Step3.2에서 확인하자.
@@ -350,6 +358,7 @@ public class Main {
 <br>  
 
 * 적절한 스레드 풀 크기 조절 참고  
+
 > [https://12bme.tistory.com/368](https://12bme.tistory.com/368)
   
 <br>  

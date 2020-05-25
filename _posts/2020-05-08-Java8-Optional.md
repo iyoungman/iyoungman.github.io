@@ -7,15 +7,16 @@ categories: Java
 
 * TOC
 {:toc}
-## Summary
-* Null의 문제점을 파악한다.
-* Java8에서 나온 Optional을 Null을 대체할 방법을 알아본다.
+> Null의 문제점을 파악한다.
+>
+> Java8에서 나온 Optional을 Null을 대체할 방법을 알아본다.
   
 <br>  
 
 ## Null의 문제점
 * Null은 값이 없는 상황을 표현하는 것이다. 
-* 하지만 다음과 같은 문제점이 있다.
+* 하지만 다음과 같은 문제점이 있다.  
+
 > NullPointerException이 발생할 수 있다.
 >
 > NullPointerException은 RuntimeException이기 때문에 대비하지 않을경우 문제가 크다.
@@ -40,7 +41,8 @@ public String getCarInsuranceName(Person person) {
 <br>  
 
 ## Optional 클래스 소개
-* 선택형 값을 캡슐화하는 클래스이다.
+* 선택형 값을 캡슐화하는 클래스이다.  
+
 > 선택형 값은 주어진 값을 가질수도 있고 안 가질 수도 있다.
 >
 > Optional 객체에 이러한 두 정보를 함께 저장하는 것이다.
@@ -49,7 +51,8 @@ public String getCarInsuranceName(Person person) {
 
 <br>  
 
-* Null과 Optional.empty()의 차이점은?
+* Null과 Optional.empty()의 차이점은?  
+
 > Optional은 NullPointerException에 안전하다.
 >
 > 또한 Optional은 객체이므로 활용이 가능하다.
@@ -59,12 +62,14 @@ public String getCarInsuranceName(Person person) {
 ## Optional 적용 패턴
 
 ### Optional 객체 만들기
-* 기본적으로 Optional 객체를 만드는 방법이다.
+* 기본적으로 Optional 객체를 만드는 방법이다.  
+
 ```java
 Optional<Car> optCar = Optional.empty();
 Optional<Car> optCar = Optional.of(car);
 Optional<Car> optCar = Optional.ofNullable(car);
 ```
+
 > 이중 Optional.of 와 Optional.ofNullable의 차이점은
 >
 > car가 Null일 경우 Optional.of()는 NullPointerException을 반환한다.
@@ -105,6 +110,7 @@ Optional<String> optInsurance = otpInsurance.map(Insurance::getName);
 * 따라서 Serializable 인터페이스 구현하지 않는다.
 * 따라서 도메인 모델에 Optional의 기능과 직렬화를 모두 사용하고 싶다면
 * Optional 값을 반환받을 수 있는 메서드를 추가하자.  
+
 ```java
 public class Person {
     private Car car;//Optional<Car> X
@@ -190,7 +196,8 @@ private static String getEmptyStrWhenNull() {
 
 <br>  
 
-* 결론을 내리자면
+* 결론을 내리자면  
+
 > orElse와 orElseGet의 결과는 항상 같다.
 >
 > 하지만 orElseGet이 성능상의 이점을 가지고 있다.

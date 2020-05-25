@@ -7,24 +7,26 @@ categories: Java
 
 * TOC
 {:toc}
-## Summary
-* Java8이전의 날짜 API의 문제점을 알아본다.
-* Java8의 새로운 날짜와 시간 라이브러리를 알아본다.
+> Java8이전의 날짜 API의 문제점을 알아본다.
+>
+> Java8의 새로운 날짜와 시간 라이브러리를 알아본다.
   
 <br>  
 
 ## 새로운 API를 제공하는 이유
 * Java8 이전에 날짜, 시간 관련 기능을 제공하는
-* `Date`와 `Calendar`는 문제를 가지고 있었다.  
+* **Date와 Calendar**는 문제를 가지고 있었다.  
 
 <br> 
 
-### Date 클래스 문제점
+### Date 클래스 문제점  
+
 ```java
 Date date = new Date();//Wed Apr 22 18:18:50 KST 2020
 
 LocalDate date = LocalDate.now();//2020-04-22
 ```
+
 1) Java8의 LocalDate와 비교했을 때, 결과가 직관적이지 않다.  
 
 > Wed Apr 22 18:18:50 KST 2020
@@ -38,10 +40,12 @@ LocalDate date = LocalDate.now();//2020-04-22
 <br> 
 
 ### Calendar 클래스 문제점
+
 ```java
 Calendar calendar = Calendar.getInstance();
 calendar.set(2020, 4 , 22);//2020년 5월 22일
 ```
+
 1) Month의 인덱스  
 
 > Calendar의 Month는 상수필드로써 0부터 시작한다.
