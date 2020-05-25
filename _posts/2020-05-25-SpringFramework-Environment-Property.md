@@ -17,7 +17,7 @@ categories: Spring
 <br>  
 
 ## Property는 우선순위가 있다.
-* 같은 설정값이라도 우선순위가 높은 설저이 적용된다.
+* 같은 설정값이라도 우선순위가 높은 설정이 적용된다.
 * 아래는 [Spring Docs](https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-external-config)에 나온 우선순위이다.
 
 ```java
@@ -62,11 +62,11 @@ categories: Spring
 
 ### 예제
 * 위의 우선순위 중 **4, 9, 14** 방법을 이용해 우선순위 적용을 확인해보겠다.
-* 3가지 방법 **동시에 동일한 설정 값을 적용**하여 확인한다.
-* 설정 값은 아래와 같다.  
+* 3가지 방법 **동시에 동일한 설정 Key 값을 적용**하여 확인한다.
+* 설정 Key 값은 아래와 같다.  
 
 ```java
-app.name="value"
+app.name
 ```
 
 <br>  
