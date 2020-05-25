@@ -28,7 +28,8 @@ public interface EnvironmentCapable {
 <br>  
 
 ## Profile 이란?
-* Bean들의 그룹.
+* 애플리케이션을 각기 다른 환경으로 세팅하며<br>원하는 환경으로 선택해 실행할 수 있는 기능.
+
 * 업무 환경에서 다양한 개발 환경별 설정이 필요하다.  
 
 > test, alpha, beta, real..
@@ -36,23 +37,27 @@ public interface EnvironmentCapable {
 <br>  
 
 ## Profile 설정  
-> 아래 3가지 중 하나로 하면 된다.  
+> 여러가지 방법이 있는데 대표적인 몇가지만 알아보겠다.
+>
+> 1. IDE - Active profiles 설정
+>
+> 2. Property 설정
 
 <br>  
 
-1) Active profiles  
+1) IDE - Active profiles 설정
 
 ![2](https://user-images.githubusercontent.com/25604495/82731877-b9470e00-9d44-11ea-8772-6de83e3c87a4.PNG)
 
 <br>  
 
-2) VM options  
+2) Property 설정 - VM options  
 
 ![1](https://user-images.githubusercontent.com/25604495/82731878-ba783b00-9d44-11ea-8feb-4a21e82dbaef.PNG)
 
 <br>  
 
-3) application.properties 파일  
+3) Property 설정 - application.properties 파일  
 
 ```properties
 spring.profiles.active=test
@@ -60,7 +65,7 @@ spring.profiles.active=test
 
 <br>  
 
-## Profile에 따른 Bean 설정
+## Profile에 따라 선별적으로 Bean 등록하기
 * **@Profile** 어노테이션을 이용한다.
 
 <br>  
