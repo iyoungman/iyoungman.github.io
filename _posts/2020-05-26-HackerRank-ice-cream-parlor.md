@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HackerRank. Hash Tables: Ice Cream Parlor
+title: HackerRank. Ice Cream Parlor
 tags: Algorithm HackerRank HashMap Java
 categories: Algorithm
 ---
@@ -12,8 +12,8 @@ categories: Algorithm
 ## Think  
 * 단순 반복으로 풀면 아래 조건에 의해 O(n²) 이 나와 Timeout이 될 것이다.  
 
-![image](https://user-images.githubusercontent.com/25604495/82860473-b6bb0300-9f54-11ea-8ed7-c9280530bca3.png)
-
+![image](https://user-images.githubusercontent.com/25604495/82860473-b6bb0300-9f54-11ea-8ed7-c9280530bca3.png)  
+<br>
 * 처음에는 별도의 배열을 만들어 index를 저장했다.(Before Code)
 
 > indexOfCost[cost[i]] = i + 1;
@@ -92,7 +92,7 @@ static void whatFlavors(int[] cost, int money) {
 ## Solved Process  
 
 1) 같은 Key 값에 대해서 다른 Value 값이 나올 경우<br>
-해당 Key 값을 * 2 한 값이 money인지 검사한다.  
+   해당 Key 값을 * 2 한 값이 money인지 검사한다.  
 
 > 어차피 답은 2개의 index를 출력하는 것이기 때문에
 >
