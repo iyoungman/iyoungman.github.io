@@ -1,7 +1,7 @@
 ---
 layout: post
 title: POST, PUT, PATCH
-tags: Network HTTP
+tags: Network HTTP Idempotent
 categories: Network
 ---
 
