@@ -27,7 +27,7 @@ categories: Java
 
 ### Young 영역
 * 새롭게 생성한 객체가 위치하는 영역이다.
-* 이 영역에서 객체가 사라질 때 `Minor GC`가 발생한다고 말한다.
+* 이 영역에서 객체가 사라질 때 **Minor GC**가 발생한다고 말한다.
 * Young 영역은 3개의 영역으로 나뉜다.
     * Eden 영역
     * Survivor 영역(2개)
@@ -37,7 +37,7 @@ categories: Java
 ### Old 영역
 * Young 영역에서 살아남은 객체가 복사되는 영역이다.
 * 대부분 Young 영역보다 크게 할당하기 때문에 크기가 큰 만큼 Young 영역보다 GC는 적게 발생한다. 
-* 이 영역에서 객체가 사라질 때 `Major GC`가 발생한다고 말한다.
+* 이 영역에서 객체가 사라질 때 **Major GC**가 발생한다고 말한다.
 
 <br>  
 
@@ -114,7 +114,7 @@ categories: Java
 3) Survivor 에서 Old 영역으로 이동
 * Minor GC에서 살아남아 Survivor로 이동할때마다 객체의 Age가 증가한다.
 * Age가 일정 이상이 되면 Old 영역으로 이동한다.
-* Age는 `-XX:MaxTenuringThreshold` 옵션으로 설정할 수 있다고 한다.
+* Age는 **-XX:MaxTenuringThreshold** 옵션으로 설정할 수 있다고 한다.
 
 > 아래 그림에서 A,B가 Alive 되어있고 Age가 일정 이상 되었다고 하자.
 >
@@ -140,7 +140,7 @@ categories: Java
 
 ### 1. Serial GC
 * Young 영역에서는 위의 GC 과정에서 설펴본 방식을 사용한다.
-* Old 영역의 GC는 `Mark-Sweep-Compaction` 알고리즘을 사용한다.  
+* Old 영역의 GC는 **Mark-Sweep-Compaction** 알고리즘을 사용한다.  
 
 > 1) Old 영역에 살아 있는 객체를 표시한다.(Mark)
 >
@@ -168,7 +168,7 @@ categories: Java
 
 ### 3. Parallel Old GC
 * Parallel GC와 비교해 Old 영역의 GC 알고리즘만 다르다.
-* Old 영역에서 `Mark-Summary-Compaction` 알고리즘을 사용한다.  
+* Old 영역에서 **Mark-Summary-Compaction** 알고리즘을 사용한다.  
 
 > Mark-Sweep-Compaction 연산과는 Sweep과 Summary의 차이다.
 >  
