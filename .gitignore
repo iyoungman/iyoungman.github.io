@@ -5,3 +5,4 @@ _site
 .local/*
 .jekyll-cache
 _posts/temp/*
+_posts/img/*
