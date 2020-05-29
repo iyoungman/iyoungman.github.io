@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bean LifeCycle을 통한 초기화 메서드가 필요한 이유
+title: Bean LifeCycle 과 초기화 메서드
 tags: Spring Bean LifeCycle DI
 categories: Spring
 ---
@@ -77,16 +77,18 @@ public class HelloService {
 ***
 
 ### 초기화 LifeCycle  
-> 초기화 메서드란?
+
+> 초기화 메서드란?  
+
 * **DI 작업을 마친 후 실행되는 메서드**
 
 <br>  
 
 > 아래 3가지 방법으로 Bean의 초기화를 할 수 있다.
 
-1) @PostConstruct
-2) InitializingBean.afterPropertiesSet()
-3) init-method 
+1) @PostConstruct  
+2) InitializingBean.afterPropertiesSet()  
+3) init-method   
 
 <br>  
 
@@ -94,7 +96,7 @@ public class HelloService {
 
 * 일반적인 Java에서는 Consturctor에서 초기화를 진행한다.
 * 하지만 Spring에서는 어떠한 Bean의 Consturctor 시점에<br>의존하는 Bean들이 주입되지 않는 경우가 있다.<br>
-setter, field 주입을 사용하는 경우로 예를 들수 있다.
+* Setter, Field 주입을 사용하는 경우로 예를 들수 있다.
 * 즉, 이시점에 의존 Bean을 사용할 수 없다.  
 
 ```java
@@ -115,7 +117,9 @@ public class HelloService {
 }
 ```
 
-* 따라서 @Autowired로 의존성 주입이 일어난 **BeanPostProcessor.postProcessBeforeInitialization() Lifecycle 이후에**
+<br> 
+
+* 따라서 @Autowired로 의존성 주입이 일어난 <br>**BeanPostProcessor.postProcessBeforeInitialization() Lifecycle 이후에**
 * 초기화 메서드를 실행한다.
 
 <br>  
@@ -123,6 +127,6 @@ public class HelloService {
 ## Reference
 * [https://www.concretepage.com/spring/spring-bean-life-cycle-tutorial](https://www.concretepage.com/spring/spring-bean-life-cycle-tutorial)  
 * [https://whiteship.tistory.com/791](https://whiteship.tistory.com/791)  
-* https://madplay.github.io/post/spring-bean-lifecycle-methods
-* https://zorba91.tistory.com/223
-* https://stackoverflow.com/questions/11380558/why-does-spring-dependency-injection-have-init-method
+* [https://madplay.github.io/post/spring-bean-lifecycle-methods](https://madplay.github.io/post/spring-bean-lifecycle-methods)
+* [https://zorba91.tistory.com/223](https://zorba91.tistory.com/223)
+* [https://stackoverflow.com/questions/11380558/why-does-spring-dependency-injection-have-init-method](https://stackoverflow.com/questions/11380558/why-does-spring-dependency-injection-have-init-method)
