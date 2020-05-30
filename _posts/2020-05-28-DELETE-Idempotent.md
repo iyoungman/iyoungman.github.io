@@ -2,7 +2,7 @@
 layout: post
 title: HTTP DELETE는 멱등성을 가질까?
 tags: HTTP DELETE Idempotent
-categories: Algorithm
+categories: Network
 ---
 * TOC
 {:toc}
