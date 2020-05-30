@@ -202,11 +202,15 @@ public class ForkJoinSumCalculator extends RecursiveTask<Long> {
 ### 포크/조인 프레임워크를 제대로 사용하는 방법
 1) 두 서브태스크가 시작된 다음에 join 호출.
 * join은 태스크의 결과가 처리될 때까지 기다린다.  
+
 <br>  
+
 2) RecursiveTask 내에서는 invoke() 메서드 사용하지 말아야한다.
 * 순차 코드에서 병렬 계산을 시작할때만 invoke()를 사용한다.  
 * invoke()는 Task를 Pool에 제출하는 메서드이다.  
+
 <br>  
+
 3) 한쪽 작업에는 fork, 한쪽 작업에는 compute 가 효율적.
 * compute 쪽에서는 같은 스레드를 재사용.  
 
