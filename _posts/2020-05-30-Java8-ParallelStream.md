@@ -90,14 +90,22 @@ Runtime.getRuntime().availableProcessors()
 > 아래와 같은 요소를 고려하자.
 
 1) 직접 성능을 측정하라.  
+
 <br>  
+
 2) 박싱을 주의  
+
 <br>  
+
 3) 요소의 순서와 관련있는 연산 피하기
 * limit, findFirst  
+
 <br>  
+
 4) 소량의 데이터의 경우 사용하지 말자.  
+
 <br>  
+
 5) 스트림을 구성하는 자료구조 확인
 
 
