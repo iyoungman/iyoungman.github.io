@@ -6,7 +6,7 @@ categories: Algorithm
 ---
 * TOC
 {:toc}
-> HTTP DELETE 메서드는 왜 멱등성을 가지는지 알아본다.
+> HTTP DELETE 메서드가 멱등성을 가지는 이유를 알아본다.
 
 <br>
 
