@@ -90,14 +90,22 @@ Runtime.getRuntime().availableProcessors()
 > 아래와 같은 요소를 고려하자.
 
 1) 직접 성능을 측정하라.  
+
 <br>  
+
 2) 박싱을 주의  
+
 <br>  
+
 3) 요소의 순서와 관련있는 연산 피하기
 * limit, findFirst  
+
 <br>  
+
 4) 소량의 데이터의 경우 사용하지 말자.  
+
 <br>  
+
 5) 스트림을 구성하는 자료구조 확인
 
 
@@ -194,11 +202,15 @@ public class ForkJoinSumCalculator extends RecursiveTask<Long> {
 ### 포크/조인 프레임워크를 제대로 사용하는 방법
 1) 두 서브태스크가 시작된 다음에 join 호출.
 * join은 태스크의 결과가 처리될 때까지 기다린다.  
+
 <br>  
+
 2) RecursiveTask 내에서는 invoke() 메서드 사용하지 말아야한다.
 * 순차 코드에서 병렬 계산을 시작할때만 invoke()를 사용한다.  
 * invoke()는 Task를 Pool에 제출하는 메서드이다.  
+
 <br>  
+
 3) 한쪽 작업에는 fork, 한쪽 작업에는 compute 가 효율적.
 * compute 쪽에서는 같은 스레드를 재사용.  
 
