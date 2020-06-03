@@ -18,8 +18,11 @@ categories: Java
 ## Heap의 Young, Old 영역
 * 가비지 콜렉터는 Heap 영역에서 사용하지 않는 객체를 메모리에서 제거한다.
 * Heap에는 크게 2개의 물리적 공간으로 나뉜다.
-    * Young Generation 영역(이하 Young 영역)
-    * Old Generation 영역(이하 Old 영역)  
+> Young Generation 영역(이하 Young 영역)
+>
+> Old Generation 영역(이하 Old 영역)  
+    
+<br>  
 
 ![image](https://user-images.githubusercontent.com/25604495/82313897-f5583700-9a03-11ea-9ba8-23f7b8e21268.png)  
   
@@ -29,9 +32,10 @@ categories: Java
 * 새롭게 생성한 객체가 위치하는 영역이다.
 * 이 영역에서 객체가 사라질 때 **Minor GC**가 발생한다고 말한다.
 * Young 영역은 3개의 영역으로 나뉜다.
-    * Eden 영역
-    * Survivor 영역(2개)
-
+> Eden 영역
+>
+> Survivor 영역(2개)
+    
 <br>  
 
 ### Old 영역
@@ -41,9 +45,12 @@ categories: Java
 
 <br>  
 
-## GC 과정
-* 아래 예제를 통해 GC 과정에 대해 알아본다.  
+## Minor GC 과정
+* 아래 예제를 통해 Minor GC 과정에 대해 알아본다.  
+* Minor GC는 **Copy And Scavenger** 과정을 거친다.
   
+<br>  
+
 1) Eden 에서 Survivor 영역 이동
 > 새로 생성한 대부분의 객체는 Eden 영역에 위치한다.
 >
@@ -142,24 +149,29 @@ categories: Java
 * Young 영역에서는 위의 GC 과정에서 설펴본 방식을 사용한다.
 * Old 영역의 GC는 **Mark-Sweep-Compaction** 알고리즘을 사용한다.  
 
-> 1) Old 영역에 살아 있는 객체를 표시한다.(Mark)
+> Mark : Old 영역에 살아 있는 객체를 표시한다.(Mark)
 >
-> 2) Old 영역의 Mark된 객체를 제외하고 제거한다.(Sweep)
+> Sweep : Old 영역의 Mark된 객체를 제외하고 제거한다.(Sweep)
 >
-> 3) 살아있는 객체를 모은다.(Compaction)  
+> Compaction : 살아있는 객체를 모은다.(Compaction)  
   
 <img src = "https://user-images.githubusercontent.com/25604495/82413363-268e4100-9ab0-11ea-9de4-95336641b73e.png" width="500" height="300" />  
- 
+  
+<br>  
+
+> Compaction을 하는 이유는?
+* 메모리 단편화 제거
 
 ***
 
 <br>
 
 ### 2. Parallel GC
-* Serial GC와 기본적인 알고리즘은 같다.
-* 차이점은 
-    * Serial GC는 처리하는 스레드가 하나인 것에 비해
-    * Parallel GC는 GC를 처리하는 쓰레드가 여러개이다.
+* Serial GC와 기본적인 알고리즘은 같다.  
+<br>
+> 차이점은?
+* Serial GC는 Minor GC에서 처리하는 스레드가 하나인 것에 비해<br>Parallel GC는 Minor GC를 처리하는 쓰레드가 여러개이다.  
+<br>
 * 따라서 Serial GC보다 빠르게 객체를 처리한다.
 
 ***
@@ -182,7 +194,7 @@ categories: Java
 
 <br>
 
-### 4. CMS GC
+### 4. CMS(Concurrent-Mark-Sweep) GC
 * Old영역은 GC는 다음 흐름과 같다.  
 
 > 초기 Initial Mark 단계에서 클래스 로더에서 가장 가까운 객체 중 살아있는 객체를 찾는다.
@@ -206,7 +218,7 @@ categories: Java
 <br>
 
 * 단점은 다른 GC 방식보다 메모리와 CPU를 더 많이 사용한다.
-* 또한, Compaction 단계가 기본적으로 제공되지 않는다.
+* 또한, Compaction 단계가 기본적으로 제공되지 않는다.<br>필요하면 별도의 설정이 필요.
 
 ***
 
@@ -216,6 +228,8 @@ categories: Java
 * Young 영역과 Old 영역을 나누지 않고
 * 바둑판 모양 각 영역에 객체를 할당한다.
 * 모든 GC 방식중에 가장 빠르다.  
+
+<br>
 
 <img src = "https://user-images.githubusercontent.com/25604495/82412694-0b6f0180-9aaf-11ea-9a30-9f9fe6f2f722.png" width="600" height="300" />
 
