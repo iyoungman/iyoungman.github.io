@@ -173,7 +173,8 @@ categories: Java
 * Serial GC와 기본적인 알고리즘은 같다.  
 
 <br>
-> 차이점은?
+> 차이점은?  
+
 * Serial GC는 Minor GC에서 처리하는 스레드가 하나인 것에 비해<br>Parallel GC는 Minor GC를 처리하는 스레드가 여러개이다.  
 <br>
 * 따라서 Serial GC보다 빠르게 객체를 처리한다.
