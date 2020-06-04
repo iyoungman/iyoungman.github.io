@@ -170,7 +170,7 @@ categories: Java
 * Serial GC와 기본적인 알고리즘은 같다.  
 <br>
 > 차이점은?
-* Serial GC는 Minor GC에서 처리하는 스레드가 하나인 것에 비해<br>Parallel GC는 Minor GC를 처리하는 쓰레드가 여러개이다.  
+* Serial GC는 Minor GC에서 처리하는 스레드가 하나인 것에 비해<br>Parallel GC는 Minor GC를 처리하는 스레드가 여러개이다.  
 <br>
 * 따라서 Serial GC보다 빠르게 객체를 처리한다.
 
@@ -187,8 +187,6 @@ categories: Java
 > Sweep은 단일 스레드가 Old 영역을 훑어 객체만 찾아내는 방식이지만
 >
 > Summary는 여러 스레드가 Old 영역을 분리하여 훑는다.
->
-> 효율을 위해 이전 GC에서 Compaction된 영역을 별도로 훑는다.
 
 ***
 
@@ -197,26 +195,20 @@ categories: Java
 ### 4. CMS(Concurrent-Mark-Sweep) GC
 * Old영역은 GC는 다음 흐름과 같다.  
 
-> 초기 Initial Mark 단계에서 클래스 로더에서 가장 가까운 객체 중 살아있는 객체를 찾는다.
+> Initial Mark -> Concurrent Mark -> Remark -> Concurrent Sweep
+
+> Initial Mark : 클래스 로더에서 가장 가까운 객체 중 살아있는 객체를 찾는다.
 >
-> Concurrent Mark 단계에서 방금 살아있다고 확인된 객체에서 참조하고 있는 객체들을 따라가며 확인한다.
+> Concurrent Mark : 방금 살아있다고 확인된 객체에서 참조하고 있는 객체들을 따라가며 확인한다.
 >
-> Remark 단계에서 Concurrent Mark 단계에서 새로 추가되거나 끊긴 객체를 확인한다.
+> Remark : Concurrent Mark 단계에서 새로 추가되거나 끊긴 객체를 확인한다.
 >
-> Concurrent Sweep 단계에서는 Mark된 쓰레기 객체를 정리한다.
+> Concurrent Sweep : Mark된 쓰레기 객체를 정리한다.
 
 <br>
 
 * 장점은 stop-the-world 시간이 짧다.  
-
-> 즉, 전체 스레드를 멈추고 수행되는 것이 아니라
->
-> 다른 스레드가 실행 중인 상태에서 동시에 수행되는 연산이 많기 때문이다.
->
-> Inital Mark 단계를 제외하고 위와 같이 수행된다.
-
 <br>
-
 * 단점은 다른 GC 방식보다 메모리와 CPU를 더 많이 사용한다.
 * 또한, Compaction 단계가 기본적으로 제공되지 않는다.<br>필요하면 별도의 설정이 필요.
 
@@ -248,3 +240,4 @@ categories: Java
 * [https://johngrib.github.io/wiki/java-gc-eden-to-survivor/](https://johngrib.github.io/wiki/java-gc-eden-to-survivor/)  
 * [https://deveric.tistory.com/64?category=346694](https://deveric.tistory.com/64?category=346694)  
 * [https://preamtree.tistory.com/118](https://preamtree.tistory.com/118)  
+* [https://www.slipp.net/wiki/pages/viewpage.action?pageId=30770388](https://www.slipp.net/wiki/pages/viewpage.action?pageId=30770388)
