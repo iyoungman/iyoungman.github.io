@@ -17,7 +17,8 @@ categories: Java
 
 ## Heap의 Young, Old 영역
 * 가비지 콜렉터는 Heap 영역에서 사용하지 않는 객체를 메모리에서 제거한다.
-* Heap에는 크게 2개의 물리적 공간으로 나뉜다.
+* Heap에는 크게 2개의 물리적 공간으로 나뉜다.  
+
 > Young Generation 영역(이하 Young 영역)
 >
 > Old Generation 영역(이하 Old 영역)  
@@ -31,7 +32,8 @@ categories: Java
 ### Young 영역
 * 새롭게 생성한 객체가 위치하는 영역이다.
 * 이 영역에서 객체가 사라질 때 **Minor GC**가 발생한다고 말한다.
-* Young 영역은 3개의 영역으로 나뉜다.
+* Young 영역은 3개의 영역으로 나뉜다.  
+
 > Eden 영역
 >
 > Survivor 영역(2개)
@@ -159,7 +161,8 @@ categories: Java
   
 <br>  
 
-> Compaction을 하는 이유는?
+> Compaction을 하는 이유는?  
+
 * 메모리 단편화 제거
 
 ***
@@ -168,6 +171,7 @@ categories: Java
 
 ### 2. Parallel GC
 * Serial GC와 기본적인 알고리즘은 같다.  
+
 <br>
 > 차이점은?
 * Serial GC는 Minor GC에서 처리하는 스레드가 하나인 것에 비해<br>Parallel GC는 Minor GC를 처리하는 스레드가 여러개이다.  
