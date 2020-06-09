@@ -61,6 +61,7 @@ Comparator<Apple> byWeight =
 ### 람다의 기본 문법
 
 > i. 표현식 스타일  
+
 * 중괄호 생략.
 * return 생략.
 
@@ -74,6 +75,7 @@ Comparator<Apple> byWeight =
 <br>  
 
 > ii. 블록 스타일  
+
 * 중괄호 사용.
 * return 사용.
 
@@ -355,7 +357,8 @@ private Runnable method() {
 
 <br>  
 
-> 하지만, 지역 변수에는 제약이 있다.
+> 하지만, 지역 변수에는 제약이 있다.  
+
 * 명시적으로 final로 선언되어있거나,<br>
 실질적으로 final로 선언된 변수와 똑같이 사용되어야한다.  
 <br>  
@@ -372,7 +375,8 @@ private Runnable method() {
 
 <br>  
 
-> 외부에서 지역변수 값을 어떻게 참조할까?
+> 외부에서 지역변수 값을 어떻게 참조할까?  
+
 * 위 코드를 예로들면 method가 종료된 이후에는<br>
 람다는 반환되고 num 변수는 스택 영역에서 사라질 것이다.<br>
 따라서 외부에서 람다를 사용할 때 num 변수에 접근할 수 없을것이다.<br>
@@ -380,14 +384,16 @@ private Runnable method() {
 
 <br>  
 
-> 왜 final로 지역 변수를 제약해야할까?
+> 왜 final로 지역 변수를 제약해야할까?  
+
 * 리턴된 람다식은 여러 스레드에서 사용할 수 있다.<br>
 복사본의 값을 바꿀 수 있도록하면 동기화 처리가 필요할 것이다.<br>
 따라서 복사본의 값이 바뀌지 않도록 final로 선언한다.
 
 <br>  
 
-> 인스턴스 변수 or 전역 변수는?
+> 인스턴스 변수 or 전역 변수는?  
+
 * 힙 영역에 생성되므로 동일한 변수를 참조할 수 있다.
 * 따라서 final로 선언하지 않아도 된다.
 
@@ -398,10 +404,15 @@ private Runnable method() {
 * 람다표현식보다 메서드 참조를 통해 가독성을 높일 수 있다.
 * 메서드명 앞에 :: 를 붙인다.  
 
-> Apple 클래스에 정의된 getWeight의 메서드 참조.
->
-> (Apple a) -> a.getWeight() == Apple::getWeight
+<br>
 
+```java
+(Apple a) -> a.getWeight()
+
+Apple::getWeight
+```
+
+> Apple 클래스에 정의된 getWeight의 메서드 참조.
 
 <br>
 
