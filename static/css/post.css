@@ -35,6 +35,12 @@
     color: #817c7c;
 }
 
+/* custom */
+.post article h2{
+    color: #FFFFFF;
+    background-color: #000000
+}
+
 .post header p.post-tag a{
     display: inline-block;
     background: #2ca6cb;
