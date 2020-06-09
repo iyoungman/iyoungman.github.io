@@ -197,21 +197,27 @@ categories: Java
 <br>
 
 ### 4. CMS(Concurrent-Mark-Sweep) GC
+* **Stop-The-World 시간을 최소화**하기 위한 방식이다.  
+
+![image](https://user-images.githubusercontent.com/25604495/84131722-e3583a00-aa7f-11ea-8620-7e7174e339ff.png)  
+
+<br>
+
 * Old영역은 GC는 다음 흐름과 같다.  
 
 > Initial Mark -> Concurrent Mark -> Remark -> Concurrent Sweep
 
-> Initial Mark : 클래스 로더에서 가장 가까운 객체 중 살아있는 객체를 찾는다.
+> Initial Mark : GC Root에서 참조 Tree상 가장 가까운 객체만 1차적으로 GC 대상인지 판단한다. Stop-The-World 가 발생하지만 탐색 깊이가 얕기 때문에 시간이 짧다.
 >
-> Concurrent Mark : 방금 살아있다고 확인된 객체에서 참조하고 있는 객체들을 따라가며 확인한다.
+> Concurrent Mark : Initial Mark 단계에서 살아있다고 확인된 객체에서 참조하고 있는 객체들을 따라가며 확인한다. Stop-The-World가 발생하지 않는다.
 >
-> Remark : Concurrent Mark 단계에서 새로 추가되거나 끊긴 객체를 확인한다.
+> Remark : Concurrent Mark 단계에서 새로 추가되거나 끊긴 객체를 확인한다. Stop-The-World가 발생하며 이 시간을 줄이기 위해 멀티 스레드를 이용한다.
 >
-> Concurrent Sweep : Mark된 쓰레기 객체를 정리한다.
+> Concurrent Sweep : Mark된 쓰레기 객체를 정리한다. Stop-The-World가 발생하지 않는다.
 
 <br>
 
-* 장점은 stop-the-world 시간이 짧다.  
+* 장점은 Stop-The-World 시간이 짧다.  
 <br>
 * 단점은 다른 GC 방식보다 메모리와 CPU를 더 많이 사용한다.
 * 또한, Compaction 단계가 기본적으로 제공되지 않는다.<br>필요하면 별도의 설정이 필요.
@@ -244,4 +250,6 @@ categories: Java
 * [https://johngrib.github.io/wiki/java-gc-eden-to-survivor/](https://johngrib.github.io/wiki/java-gc-eden-to-survivor/)  
 * [https://deveric.tistory.com/64?category=346694](https://deveric.tistory.com/64?category=346694)  
 * [https://preamtree.tistory.com/118](https://preamtree.tistory.com/118)  
-* [https://www.slipp.net/wiki/pages/viewpage.action?pageId=30770388](https://www.slipp.net/wiki/pages/viewpage.action?pageId=30770388)
+* [https://www.slipp.net/wiki/pages/viewpage.action?pageId=30770388](https://www.slipp.net/wiki/pages/viewpage.action?pageId=30770388)  
+* [https://mirinae312.github.io/develop/2018/06/04/jvm_gc.html](https://mirinae312.github.io/develop/2018/06/04/jvm_gc.html)
+* [https://heowc.tistory.com/51](https://heowc.tistory.com/51)  
