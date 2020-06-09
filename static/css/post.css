@@ -38,7 +38,11 @@
 /* custom */
 .post article h2{
     color: #FFFFFF;
-    background-color: #000000
+    background-color: #000000;
+}
+
+.post article h3{
+    font-weight: bold;
 }
 
 .post header p.post-tag a{
