@@ -6,21 +6,29 @@ icon: octicon-heart
 isNavItem: true
 ---
 
+* TOC
+{:toc}
+
+<br>
+
 ## Introduce
 * 정리하는 것을 좋아합니다.
 * 개발과 발전을 좋아합니다.
 * 팀원들과 공유를 좋아합니다.  
+
 <br>
 
 ## Motto
 * I can be who I want to be.  
 * 현재 이 순간을 즐기자.
 * 하루하루를 소중하게 보내자.  
+
 <br>
 
 ## Blog
 * 필요한 내용을 **저의 언어**로 정리하여 기록하기 위한 블로그입니다.  
 * 가독성 있는 글을 추구합니다.  
+
 <br>
 
 ## Experience
@@ -29,6 +37,7 @@ isNavItem: true
 * [18.06 ~ 18.11] 한국전자통신연구원(ETRI) '질의 응답 시스템 학습 데이터 구축'  용역 관리자
 * [18.02 ~ 18.12] 한국연구재단, 중앙대학교 '한국어 말하기 학습 애플리케이션' 외주 개발
 * [17.02 ~ 19.02] 서경대학교 학부 연구실  
+
 <br>
 
 ## Competition / Certificate
@@ -39,9 +48,3 @@ isNavItem: true
 * [18.03 ~ 18.11] 2018 한이음 공모전 수료  
 
 <br>
-<br>
-
-## Comments
-{% include disqus_comments.html %}
-
-
