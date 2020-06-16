@@ -6,11 +6,6 @@ icon: octicon-heart
 isNavItem: true
 ---
 
-* TOC
-{:toc}
-
-<br>
-
 ## Introduce
 * 정리하는 것을 좋아합니다.
 * 개발과 발전을 좋아합니다.
