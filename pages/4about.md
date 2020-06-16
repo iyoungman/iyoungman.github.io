@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: page
 title: About
 permalink: /about/
 icon: octicon-heart
@@ -48,3 +48,6 @@ isNavItem: true
 * [18.03 ~ 18.11] 2018 한이음 공모전 수료  
 
 <br>
+
+## Comments
+{% include disqus_comments.html %}
