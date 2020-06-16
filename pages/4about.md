@@ -5,6 +5,10 @@ permalink: /about/
 icon: octicon-heart
 isNavItem: true
 ---
+* TOC
+{:toc}
+
+<br>
 
 ## Introduce
 * 정리하는 것을 좋아합니다.
@@ -37,8 +41,11 @@ isNavItem: true
 * [19.02 ~ 19.02] 2019 스마트창작터 공유경제 해커톤 우수상(2등)
 * [18.04 ~ 18.04] 2018 KIIS 춘계 학술대회 논문 포스터 발표
 * [18.03 ~ 18.11] 2018 한이음 공모전 수료  
+
 <br>
 <br>
-<br>
+
+## Comments
+{% include disqus_comments.html %}
 
 
