@@ -13,20 +13,20 @@ isNavItem: true
 
 <br>
 
-## Motto
+## <span style="color:#FFFFFF; background-color:#000000;"> Motto </span>
 * I can be who I want to be.  
 * 현재 이 순간을 즐기자.
 * 하루하루를 소중하게 보내자.  
 
 <br>
 
-## Blog
+## <span style="color:#FFFFFF; background-color:#000000;"> Blog </span>
 * 필요한 내용을 **저의 언어**로 정리하여 기록하기 위한 블로그입니다.  
 * 가독성 있는 글을 추구합니다.  
 
 <br>
 
-## Experience
+## <span style="color:#FFFFFF; background-color:#000000;"> Experience </span>
 * [13.03 ~ 20.02] 서경대학교 졸업
 * [19.03 ~ 19.06] ICT 인턴십 (주)에네이 인턴
 * [18.06 ~ 18.11] 한국전자통신연구원(ETRI) '질의 응답 시스템 학습 데이터 구축'  용역 관리자
@@ -35,7 +35,7 @@ isNavItem: true
 
 <br>
 
-## Competition / Certificate
+## <span style="color:#FFFFFF; background-color:#000000;"> Competition / Certificate </span>
 * [19.12 ~ 19.12] 2019 서경대학교 알고리즘 대회 서경혁신원장상(1등)
 * [19.05 ~ 19.05] 정보처리기사 1급
 * [19.02 ~ 19.02] 2019 스마트창작터 공유경제 해커톤 우수상(2등)
