@@ -124,7 +124,7 @@ Runtime.getRuntime().availableProcessors()
 <br>  
 * compute의 의사코드이다.
 
-```java
+```text
 if (태스크가 충분히 작거나 더 이상 분할 할 수 없으면) {
 	순차적으로 태스크 계산
 } else {

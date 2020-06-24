@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 상속(Inheritance)보다는 컴포지션(Composition)
+title: 상속(Inheritance) vs 컴포지션(Composition)
 tags: DesignPattern Inheritance Composition Java Spring
 categories: DesignPattern
 ---
@@ -66,7 +66,7 @@ public class DConnectionMaker implements ConnectionMaker {
 public class NConnectionMaker implements ConnectionMaker {
 
     public Connection makeConnection() throws ClassNotFoundException, SQLException {
-      // N사 DB Connection 생성코드
+        // N사 DB Connection 생성코드
         return null;
     }
 }
@@ -74,7 +74,7 @@ public class NConnectionMaker implements ConnectionMaker {
 //UserDao
 public class UserDao {
 
-    private ConnectionMaker connectionMaker;//컴포지션 사용!
+    private ConnectionMaker connectionMaker;//컴포지션 사용
 
     public UserDao(ConnectionMaker connectionMaker) {
         this.connectionMaker = connectionMaker;
@@ -82,12 +82,12 @@ public class UserDao {
 
     public void add(User user) throws ClassNotFoundException, SQLException {
 		Connection c = connectionMaker.makeConnection();
-        ...
+        //생략
     }
 
     public User get(String id) throws ClassNotFoundException, SQLException {
 		Connection c = connectionMaker.makeConnection();
-        ...
+        //생략
     }
 }
 

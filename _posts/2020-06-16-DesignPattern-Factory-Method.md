@@ -34,12 +34,12 @@ public abstract class UserDao {
 
     public void add(User user) throws ClassNotFoundException, SQLException {
 		Connection c = getConnection();
-        ...
+        //생략
     }
 
     public User get(String id) throws ClassNotFoundException, SQLException {
 		Connection c = getConnection();
-        ...
+        //생략
     }
 
     public abstract Connection getConnection() throws ClassNotFoundException, SQLException;
@@ -47,6 +47,7 @@ public abstract class UserDao {
 
 //DUserDao
 public class DUserDao {
+
 	public Connection getConnection() throws ClassNotFoundException, SQLException {
 		// D사 DB Connection 생성코드
 		return null;
@@ -56,6 +57,7 @@ public class DUserDao {
 
 //NUserDao
 public class NUserDao extends UserDao {
+	
 	public Connection getConnection() throws ClassNotFoundException, SQLException {
 		// N사 DB Connection 생성코드
 		return null;
