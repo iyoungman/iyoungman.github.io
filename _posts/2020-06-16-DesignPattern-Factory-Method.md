@@ -33,13 +33,13 @@ categories: DesignPattern
 public abstract class UserDao {
 
     public void add(User user) throws ClassNotFoundException, SQLException {
-		Connection c = getConnection();
-        //생략
+        Connection c = getConnection();
+        ...
     }
 
     public User get(String id) throws ClassNotFoundException, SQLException {
-		Connection c = getConnection();
-        //생략
+        Connection c = getConnection();
+        ...
     }
 
     public abstract Connection getConnection() throws ClassNotFoundException, SQLException;
@@ -48,20 +48,20 @@ public abstract class UserDao {
 //DUserDao
 public class DUserDao {
 
-	public Connection getConnection() throws ClassNotFoundException, SQLException {
-		// D사 DB Connection 생성코드
-		return null;
-	}
+    public Connection getConnection() throws ClassNotFoundException, SQLException {
+        // D사 DB Connection 생성코드
+        return null;
+    }
 
 }
 
 //NUserDao
 public class NUserDao extends UserDao {
-	
-	public Connection getConnection() throws ClassNotFoundException, SQLException {
-		// N사 DB Connection 생성코드
-		return null;
-	}
+
+    public Connection getConnection() throws ClassNotFoundException, SQLException {
+        // N사 DB Connection 생성코드
+        return null;
+    }
 }
 ```
 

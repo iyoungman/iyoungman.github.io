@@ -151,7 +151,7 @@ public void add(User user) throws DuplicateUserIdException, SQLException {
         if (e.getErrorCode() == MysqlErrorNumbers.ER_DUP_ENTRY) {
             throw new DuplicateUserIdException(e);
         } else {
-          throw new RuntimeException(e);
+            throw new RuntimeException(e);
         }
     }
 }

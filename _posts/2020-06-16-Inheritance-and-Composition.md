@@ -81,15 +81,13 @@ public class UserDao {
     }
 
     public void add(User user) throws ClassNotFoundException, SQLException {
-	Connection c = connectionMaker.makeConnection();
-	
+        Connection c = connectionMaker.makeConnection();
         ...
     }
 
     public User get(String id) throws ClassNotFoundException, SQLException {
-	Connection c = connectionMaker.makeConnection();
-        
-	...
+        Connection c = connectionMaker.makeConnection();
+        ...
     }
 }
 
