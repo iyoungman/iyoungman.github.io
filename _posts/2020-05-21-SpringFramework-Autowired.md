@@ -15,7 +15,7 @@ categories: Spring
 
 ## @Autowired
 * 필요한 의존 객체의 **타입**에 해당하는 빈을 찾아 주입한다.
-* 선언한 빈을 못 찾으면 애플리케이션 구동 안된다.   
+* 선언한 빈을 못 찾으면 애플리케이션 구동 안된다.
 
 ```java
 boolean required() default true;
@@ -73,19 +73,17 @@ public class OtherService {
 
 ***
 
-> `해결 방법1. @Primary`
->
-> 우선 순위를 정한다.
->
-> AService 혹은 BService에 선언한다.
+> 해결 방법1. @Primary
+
+* 우선 순위를 정한다.
+* AService 혹은 BService에 선언한다.
 
 ***
 
-> `해결 방법2. @Qualifier`
->
-> 빈의 이름을 기입한다.
->
-> 기본적으로 빈의 camelCase가 이름이다.
+> 해결 방법2. @Qualifier
+
+* 빈의 이름을 기입한다.
+* 기본적으로 빈의 camelCase가 이름이다.
 
 ```java
 @Service

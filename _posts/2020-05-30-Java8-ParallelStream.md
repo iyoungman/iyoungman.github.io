@@ -124,9 +124,9 @@ Runtime.getRuntime().availableProcessors()
 <br>  
 * compute의 의사코드이다.
 
-```text
+```java
 if (태스크가 충분히 작거나 더 이상 분할 할 수 없으면) {
-	순차적으로 태스크 계산
+    순차적으로 태스크 계산
 } else {
     태스크를 두 서브태스크로 분할
     태스크가 다시 서브태스크로 분할되도록 이 메서드를 재귀적으로 호출함

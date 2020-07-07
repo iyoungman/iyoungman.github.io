@@ -124,7 +124,7 @@ try catch를 강제하기 때문이다.
 > 서버환경에서의 예외 처리
 
 * 대부분의 서버환경에서는 예외 처리를 일괄적으로 다룰 수 있는 기능을 제공한다.
-* 복구하지 못할 예외라면 런타임 예외롤 포장하여 던지고<br> 예외처리 서비스를 이용하면 편리하다.  
+* 복구하지 못할 예외라면 런타임 예외를 포장하여 던지고 예외처리 서비스를 이용하면 편리하다.  
 <br>
 * 서버 환경에서는 쳬크 예외의 활용도가 떨어지고 있다.
 
@@ -210,7 +210,7 @@ public void add(User user) throws DuplicateUserIdException, SQLException {
 <br>  
 
 ## 데이터 액세스 예외 추상화와 DataAccessException 구조
-* 데이터 액세스 기술에는 JDBCTemplate(SQL Mapper)을 이용한 방식 이외에도 다양한 방법이 존재한다.
+* 데이터 액세스 기술에는 JDBCTemplate(SQL Mapper)을 이용한 방식 이외에도 여러 방법이 존재한다.
 * 예를 들면 MyBatis(SQL Mapper)나 JPA(ORM) 등이 있다.  
 
 <br>  

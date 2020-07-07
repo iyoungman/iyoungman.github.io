@@ -18,12 +18,10 @@ categories: Spring
 
 ```java
 public interface ApplicationContext extends EnvironmentCapable {
-
 }
 
 public interface EnvironmentCapable {
-
-	Environment getEnvironment();
+    Environment getEnvironment();
 }
 ```
 
@@ -72,7 +70,7 @@ spring.profiles.active=test
 
 <br>  
 
-* 'test' Profile 환경에서만 적용되는 특정 Bean을 사용하고 싶다.
+> "test"라는 Profile 환경에서만 적용되는 특정 Bean을 사용하고 싶다.
 
 ```java
 public class TestBookRepository {
@@ -111,7 +109,7 @@ public class EnvironmentRunner implements ApplicationRunner {
 "Profile : test"
 ```
 
-> 'test' Profile로 설정되어있지 않은경우, TestBookRepository를 주입 받을 수 없다.
+* "test" Profile로 설정되어있지 않은경우, TestBookRepository를 주입 받을 수 없다.
   
 <br>  
 
