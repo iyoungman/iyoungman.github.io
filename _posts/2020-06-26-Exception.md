@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 예외
-tags: Spring Exception Java
+title: 토비의 스프링 - 예외
+tags: Spring TobySpring Exception
 categories: Spring
 ---
 * TOC

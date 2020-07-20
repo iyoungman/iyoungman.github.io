@@ -1,49 +1,49 @@
-plugins: [jekyll-paginate]
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Iyoungman
+brief-intro: Back-end Developer
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://iyoungman.github.io" # the base hostname & protocol for your site
 
 permalink: /:categories/:title/
 
-highlighter: rouge
+# other links
+facebook_username: 
+github_username:  iyoungman
+email: 
+linkedIn_username: 
+
+description_footer: ""
+
+# comments
+disqus_shortname: iyoungman
+
+# statistic analysis
+google_analytics_id: UA-164759686-1
+
+# Build settings
 markdown: kramdown
+
 kramdown:
-  input:  GFM
+  input: GFM
   syntax_highlighter: rouge
 
+# port
+# port: 1234
 
-paginate: 6
-paginate_path: "page/:num"
-baseurl: ""
-
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      styles : [highlight-dark.css,gitment.css,post.css]
-      scripts : [gitment.js, post.js]
-
-
-
-title: "정 니가 정리를 하고 싶다면"
-email: imiyoungman@daum.net
-description: ""
-github:
-  username: iyoungman
-swiftype:
-  searchId: ZtaaMDyXtY_NJgJ63QsJ
-
-# Disqus
-disqus:
-  enable: true
-  shortname: iyoungman
-
-url: "https://iyoungman.github.io"
-imgrepo: "https://iyoungman.github.io/static/img"
-
-# Category
+# url
 category_dir: category/
+tag_dir: tag/
 
-# Excerpt
-# excerpt_separator: <!--break-->
+# excerpt
+excerpt_separator: "\n\n\n\n"
+
+# paginate
+gems: [jekyll-paginate]
+paginate: 6
