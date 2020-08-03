@@ -33,7 +33,7 @@ categories: Spring
 
 > Exception
 
-1. Checked Exception
+1) Checked Exception
 * 컴파일 단계에서 확일할 수 있는 예외.
 * 컴파일 단계에서 처리해줘야한다.
 * Checked Exception이 발생한 메서드에서 try catch로 잡거나<br>
@@ -42,7 +42,7 @@ categories: Spring
 <br>  
 
 
-2. Unchecked Exception
+2) Unchecked Exception
 * 컴파일 단계에서 확인할 수 없는 예외.
 * 컴파일 단계에서 처리를 반드시 할 필요는 없다.
 
