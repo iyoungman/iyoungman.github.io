@@ -7,11 +7,13 @@ categories: Java
 
 * TOC
 {:toc}  
-> Java8, Java9 에서는 코드를 비동기로 실행하는 방법을 제공한다.
->
-> CompletableFuture와 리액티브 프로그래밍이 있다.
->
-> 이중 CompletableFuture를 알아본다.
+
+## Summary
+* Java8, Java9 에서는 코드를 비동기로 실행하는 방법을 제공한다.
+* CompletableFuture와 리액티브 프로그래밍이 있다.
+* 이중 CompletableFuture를 알아본다.
+
+<!--more-->
   
 <br>  
 

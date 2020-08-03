@@ -6,9 +6,6 @@ categories: Network
 ---
 * TOC
 {:toc}
-> HTTP DELETE 메서드가 멱등성을 가지는 이유를 알아본다.
-
-<br>
 
 ## Question
 * 서버로 아래와 같은 DELETE 요청을 보낸다고 생각하자.
@@ -24,6 +21,8 @@ DELETE /account/123 HTTP/1.1
 * 해당 자원이 없기 때문이다.  
 <br>  
 * **과연 HTTP Spec에 나온대로 DELETE가 멱등한것이 맞을까?**
+
+<!--more-->
 
 <br>  
 

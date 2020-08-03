@@ -7,12 +7,11 @@ categories: Algorithm
 
 * TOC
 {:toc}
-> LinkedList 구현 문제.
-  
-<br>  
 
 ## Problem
 [https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem)    
+
+<!--more-->
   
 <br>  
 

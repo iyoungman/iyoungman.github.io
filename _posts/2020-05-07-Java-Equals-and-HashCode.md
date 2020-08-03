@@ -7,9 +7,12 @@ categories: Java
  
 * TOC
 {:toc}
-> Java의 equals()와 hashCode()에 대해 알아본다.
->
-> equals()와 hashCode()를 함께 재정의하는 이유를 알아본다.
+
+## Summary
+* Java의 equals()와 hashCode()에 대해 알아본다.
+* equals()와 hashCode()를 함께 재정의하는 이유를 알아본다.
+
+<!--more-->
   
 <br>  
 

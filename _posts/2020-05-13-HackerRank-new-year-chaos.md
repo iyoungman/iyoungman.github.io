@@ -7,12 +7,11 @@ categories: Algorithm
 
 * TOC
 {:toc}
-> Sort 문제.
-
-<br>  
 
 ## Problem
 [https://www.hackerrank.com/challenges/new-year-chaos/problem](https://www.hackerrank.com/challenges/new-year-chaos/problem)  
+
+<!--more-->
   
 <br>  
 

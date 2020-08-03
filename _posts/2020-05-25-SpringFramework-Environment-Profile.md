@@ -7,9 +7,11 @@ categories: Spring
 
 * TOC
 {:toc}
-> 강의 내용을 바탕으로 정리.  
->
-> Spring의 환경별 설정과 관련된 Profile에 대해 알아본다.
+
+## Summary
+* Spring의 환경별 설정과 관련된 Profile에 대해 알아본다.
+
+<!--more-->
   
 <br>  
 

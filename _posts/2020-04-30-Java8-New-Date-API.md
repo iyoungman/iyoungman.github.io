@@ -7,9 +7,12 @@ categories: Java
 
 * TOC
 {:toc}
-> Java8이전의 날짜 API의 문제점을 알아본다.
->
-> Java8의 새로운 날짜와 시간 라이브러리를 알아본다.
+
+## Summary
+* Java8 이전의 날짜 API의 문제점을 알아본다.
+* Java8의 새로운 날짜와 시간 라이브러리를 알아본다.
+
+<!--more-->
   
 <br>  
 

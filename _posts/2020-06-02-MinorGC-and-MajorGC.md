@@ -7,11 +7,13 @@ categories: Java
 
 * TOC
 {:toc}
-> JVM Heap의 Young, Old 영역에 대해 알아본다.
->
-> Minor GC와 Major GC에 대해 알아본다.  
->
-> GC 방식에 대해 알아본다.  
+
+## Summary
+* JVM Heap의 Young, Old 영역에 대해 알아본다.
+* Minor GC와 Major GC에 대해 알아본다.  
+* GC 방식에 대해 알아본다.  
+
+<!--more-->
 
 <br>  
 

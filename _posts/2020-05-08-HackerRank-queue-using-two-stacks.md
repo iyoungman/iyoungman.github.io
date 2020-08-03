@@ -7,12 +7,11 @@ categories: Algorithm
 
 * TOC
 {:toc}
-> Stack, Queue 문제.
-  
-<br>  
 
 ## Problem
 [https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem](https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks/problem)    
+
+<!--more-->
   
 <br>  
 

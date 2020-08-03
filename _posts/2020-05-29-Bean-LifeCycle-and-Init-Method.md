@@ -6,9 +6,12 @@ categories: Spring
 ---
 * TOC
 {:toc}
-> Bean LifeCycle과 DI를 알아본다.
->
-> 초기화 메서드가 필요한 이유를 알아본다.
+
+## Summary
+* Bean LifeCycle과 DI를 알아본다.
+* 초기화 메서드가 필요한 이유를 알아본다.
+
+<!--more-->
 
 <br>    
 

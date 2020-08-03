@@ -7,12 +7,11 @@ categories: Algorithm
 
 * TOC
 {:toc}
-> HashMap 문제.
-
-<br>  
 
 ## Problem  
 [https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem](https://www.hackerrank.com/challenges/ctci-ice-cream-parlor/problem)  
+
+<!--more-->
   
 <br>  
 

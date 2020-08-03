@@ -7,9 +7,12 @@ categories: Java
 
 * TOC
 {:toc}
-> Null의 문제점을 파악한다.
->
-> Java8에서 나온 Optional을 Null을 대체할 방법을 알아본다.
+
+## Summary
+* Null의 문제점을 파악한다.
+* Java8에서 나온 Optional을 Null을 대체할 방법을 알아본다.
+
+<!--more-->
   
 <br>  
 

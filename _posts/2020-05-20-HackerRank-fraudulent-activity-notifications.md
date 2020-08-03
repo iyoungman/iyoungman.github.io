@@ -7,12 +7,11 @@ categories: Algorithm
 
 * TOC
 {:toc}
-> Array 문제.
-
-<br>  
 
 ## Problem
 [https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem](https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem)  
+
+<!--more-->
   
 <br>  
 

@@ -7,17 +7,6 @@ categories: Java
 
 * TOC
 {:toc}
-> 람다란 무엇인가?
->
-> 람다를 어디에, 어떻게 사용하는가?
->
-> 실행 어라운드 패턴.
->
-> 함수형 인터페이스와 형식 추론.
->
-> 메서드 참조.
-
-<br>  
 
 ## 람다란 무엇인가?
 * 메서드로 전달할 수 있는 익명함수를 단순화한것.
@@ -36,6 +25,8 @@ Comparator<Apple> byWeight = new Comparator<Apple>() {
 Comparator<Apple> byWeight = 
         (Apple a1, Apple a2) -> Integer.compare(a1.getWeight(), a2.getWeight());
 ```
+
+<!--more-->
 
 <br>  
 

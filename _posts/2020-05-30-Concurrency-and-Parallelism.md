@@ -7,13 +7,12 @@ categories: Theory
 
 * TOC
 {:toc}
-> 동시성과 병렬성의 차이점을 알아본다.
-
-<br>  
 
 ## 동시성 vs 병렬성
 
 <img src = "https://user-images.githubusercontent.com/25604495/82318976-b8903e00-9a0b-11ea-8428-3f44bfa0dffa.png" width="600" height="350" />
+
+<!--more-->
 
 <br>  
 

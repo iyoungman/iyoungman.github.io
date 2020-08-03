@@ -7,12 +7,11 @@ categories: Algorithm
 
 * TOC
 {:toc}
-> LinkedList 구현 문제.
-  
-<br>  
 
 ## Problem
 [https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem](https://www.hackerrank.com/challenges/reverse-a-doubly-linked-list/problem)    
+
+<!--more-->
   
 <br>  
 

@@ -6,15 +6,14 @@ categories: DesignPattern
 ---
 * TOC
 {:toc}
-> 예제를 통해 팩토리 메소드 패턴을 알아본다.
-  
-<br>  
 
 ## 팩토리 메소드 패턴
 * 상속을 이용하여 변하지 않는 기능은 상위 클래스에 만들고<br>
 하위 클래스에서 구체적인 오브젝트 생성 방법을 결정하는 디자인 패턴.  
 
 ![팩토리](https://user-images.githubusercontent.com/25604495/84584886-b4a5df00-ae44-11ea-865e-0e822ffd5964.jpg)  
+
+<!--more-->
 
 <br>
 

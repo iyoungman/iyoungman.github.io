@@ -7,10 +7,12 @@ categories: Spring
 
 * TOC
 {:toc}
-> 강의 내용을 바탕으로 정리.  
->
-> @Autowired 사용과 동작원리에 대해 알아본다.
+
+## Summary
+* @Autowired 사용과 동작원리에 대해 알아본다.
   
+<!--more-->
+
 <br>  
 
 ## @Autowired

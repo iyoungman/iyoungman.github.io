@@ -7,11 +7,13 @@ categories: Network
 
 * TOC
 {:toc}
-> 멱등성(Idempotent) 에 대해 알아본다.
->
-> POST vs PUT 의 차이를 알아본다.
->
-> PUT vs PATCH 의 차이를 알아본다.
+
+## Summary
+* 멱등성(Idempotent) 에 대해 알아본다.
+* POST vs PUT 의 차이를 알아본다.
+* PUT vs PATCH 의 차이를 알아본다.
+
+<!--more-->
   
 <br>  
 

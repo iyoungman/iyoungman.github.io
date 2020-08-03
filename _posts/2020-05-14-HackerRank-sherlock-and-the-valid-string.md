@@ -7,12 +7,11 @@ categories: Algorithm
 
 * TOC
 {:toc}
-> String 문제.
-
-<br>  
 
 ## Problem
 [https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem](https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem)  
+
+<!--more-->
   
 <br>  
 

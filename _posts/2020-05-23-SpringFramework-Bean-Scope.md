@@ -7,11 +7,12 @@ categories: Spring
 
 * TOC
 {:toc}
-> 강의 내용을 바탕으로 정리.  
->
-> Spring 빈의 Scope에 대해 알아본다. 
->
-> Singleton Scope 빈에서 Prototype 빈을 참조하는 법을 알아본다.
+
+## Summary
+* Spring 빈의 Scope에 대해 알아본다. 
+* Singleton Scope 빈에서 Prototype 빈을 참조하는 법을 알아본다.
+
+<!--more-->
   
 <br>  
 
