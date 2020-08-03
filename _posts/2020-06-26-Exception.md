@@ -8,12 +8,11 @@ categories: Spring
 {:toc}
 ## 잘못된 예외 처리
 
-1) 예외를 잡고 아무것도 하지 않는 것  
+1. 예외를 잡고 아무것도 하지 않는 것  
 
-2) 예외를 화면에 출력
-* 운영서버에 올라가면 찾기 힘들다.  
+2. 예외를 화면에 출력 -> 운영서버에 올라가면 찾기 힘들다.
 
-3) 시스템을 종료
+3. 시스템을 종료
 
 <!--more-->
 
@@ -34,7 +33,7 @@ categories: Spring
 
 > Exception
 
-1) Checked Exception
+1. Checked Exception
 * 컴파일 단계에서 확일할 수 있는 예외.
 * 컴파일 단계에서 처리해줘야한다.
 * Checked Exception이 발생한 메서드에서 try catch로 잡거나<br>
@@ -43,7 +42,7 @@ categories: Spring
 <br>  
 
 
-2) Unchecked Exception
+2. Unchecked Exception
 * 컴파일 단계에서 확인할 수 없는 예외.
 * 컴파일 단계에서 처리를 반드시 할 필요는 없다.
 
