@@ -47,3 +47,6 @@ excerpt_separator: <!--more-->
 # paginate
 gems: [jekyll-paginate]
 paginate: 6
+
+# favicon
+favicon: favicon.ico
