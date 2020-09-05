@@ -36,7 +36,7 @@ categories: Kafka
 
 * 앙상블로 구성되어 있는 주키퍼는 과반수 방식에 따라 살아 있는 노드 수가 과반수 이상 유지되면 서비스를 유지할 수 있다.
 
-![IMG_1165](https://user-images.githubusercontent.com/25604495/92304769-ed74d080-efbb-11ea-9dcb-9aca57bbe249.JPG)
+![IMG_1164](https://user-images.githubusercontent.com/25604495/92304770-ee0d6700-efbb-11ea-88a9-5cc7909c0154.JPG)
 
 <br>
 
@@ -48,7 +48,7 @@ categories: Kafka
 
 > 주키퍼와 카프카
 
-![IMG_1164](https://user-images.githubusercontent.com/25604495/92304770-ee0d6700-efbb-11ea-88a9-5cc7909c0154.JPG)
+![IMG_1165](https://user-images.githubusercontent.com/25604495/92304769-ed74d080-efbb-11ea-9dcb-9aca57bbe249.JPG)
 
 * [1] 앙상블 내 3대 서버는 모두 동일한 정보를 갖고있다. <br>
 따라서 카프카 설정 파일내 주키퍼 정보 입력시 주키퍼 앙상블 중 3대 중 하나만 입력해도 사용할 수는 있다.
@@ -71,7 +71,7 @@ zookeeper.connect=peter-zk001:2181,peter-zk001:2182,peter-zk003:2181
 
 > 카프카 환경 설정 server.properties 파일의 주요 옵션
 
-https://docs.confluent.io/current/installation/configuration/broker-configs.html
+[https://docs.confluent.io/current/installation/configuration/broker-configs.html](https://docs.confluent.io/current/installation/configuration/broker-configs.html)
 
 
 
