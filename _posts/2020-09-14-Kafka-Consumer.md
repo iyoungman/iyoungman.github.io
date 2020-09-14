@@ -58,6 +58,7 @@ categories: Kafka
 <br>
 
 > 그외의 설정
+
 * [https://docs.confluent.io/current/installation/configuration/consumer-configs.html](https://docs.confluent.io/current/installation/configuration/consumer-configs.html)  
 
 
