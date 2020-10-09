@@ -8,38 +8,42 @@ type: page
 
 <div class="page clearfix">
   
-    <!-- Html Elements for Search -->
-    <div id="search-container">
-    <input type="text" id="search-input" placeholder="Search">
-    <ul id="results-container"></ul>
-    </div>
-    
-    <!-- Script pointing to jekyll-search.js -->
-    <script src="/js/jekyll-search.js" type="text/javascript"></script>
-    
-    <script type="text/javascript">
-        SimpleJekyllSearch({
-            searchInput: document.getElementById('search-input'),
-            resultsContainer: document.getElementById('results-container'),
-            json: '/search.json',
-            searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-            noResultsText: 'No results found',
-            limit: 20,
-            fuzzy: false,
-            exclude: []
-        })
-    </script>
+    <div class="left">
+        
+        <!-- Html Elements for Search -->
+        <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search">
+        <ul id="results-container"></ul>
+        </div>
+        
+        <!-- Script pointing to jekyll-search.js -->
+        <script src="/js/jekyll-search.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            SimpleJekyllSearch({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                json: '/search.json',
+                searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                noResultsText: 'No results found',
+                limit: 20,
+                fuzzy: false,
+                exclude: []
+            })
+        </script>
 
-    <style>
-    input[type=text], select {
-        width: 40%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    </style>  
+        <style>
+        input[type=text], select {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        </style>  
     
+    </div>
+
 </div>
